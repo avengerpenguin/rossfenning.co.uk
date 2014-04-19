@@ -1,6 +1,7 @@
 Title: Authorisation vs. Authentication and why we should care
 Date: 2010-06-15 19:37
 Slug: authorisation-vs-authentication
+Category: Security
 Tags: authentication, authorisation, security, identity
 Author: Ross Fenning
 
