@@ -3,8 +3,8 @@
 <head>
         <meta charset="utf-8" />
         <title>Authorisation vs. Authentication and why we should care</title>
-        <link rel="stylesheet" href="http://rossfenning.co.uk/theme/css/main.css" />
-        <link href="http://rossfenning.co.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ross Fenning Atom Feed" />
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ross Fenning Atom Feed" />
 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -13,16 +13,16 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="http://rossfenning.co.uk/">Ross Fenning </a></h1>
+                <h1><a href="./">Ross Fenning </a></h1>
                 <nav><ul>
-                    <li class="active"><a href="http://rossfenning.co.uk/category/misc.html">misc</a></li>
+                    <li class="active"><a href="./category/security.html">Security</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
   <article>
     <header>
       <h1 class="entry-title">
-        <a href="http://rossfenning.co.uk/authorisation-vs-authentication.html" rel="bookmark"
+        <a href="./authorisation-vs-authentication.html" rel="bookmark"
            title="Permalink to Authorisation vs. Authentication and why we should care">Authorisation vs. Authentication and why we should care</a></h1>
     </header>
 
@@ -33,10 +33,10 @@
         </abbr>
 
         <address class="vcard author">
-                By <a class="url fn" href="http://rossfenning.co.uk/author/ross-fenning.html">Ross Fenning</a>
+                By <a class="url fn" href="./author/ross-fenning.html">Ross Fenning</a>
         </address>
-<p>In <a href="http://rossfenning.co.uk/category/misc.html">misc</a>. </p>
-<p>tags: <a href="http://rossfenning.co.uk/tag/authentication.html">authentication</a><a href="http://rossfenning.co.uk/tag/authorisation.html">authorisation</a><a href="http://rossfenning.co.uk/tag/security.html">security</a><a href="http://rossfenning.co.uk/tag/identity.html">identity</a></p>
+<p>In <a href="./category/security.html">Security</a>. </p>
+<p>tags: <a href="./tag/authentication.html">authentication</a><a href="./tag/authorisation.html">authorisation</a><a href="./tag/security.html">security</a><a href="./tag/identity.html">identity</a></p>
 </footer><!-- /.post-info -->      <p>At some point whilst interacting with many websites or web-based
 applications and services, users are asked to state and prove who they
 are. Whether this is to make sure only that user edits their own profile
@@ -246,6 +246,19 @@ for the reverse process of a user verifying a website is who it claims
 to be, e.g. that you are looking at your bank's legitimate website and
 not an imitation set up to steal your account details.</p>
     </div><!-- /.entry-content -->
+    <div class="comments">
+      <h2>Comments !</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_identifier = "authorisation-vs-authentication.html";
+        var disqus_url = "./authorisation-vs-authentication.html";
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://rossfenning.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+    </div>
 
   </article>
 </section>
@@ -253,7 +266,7 @@ not an imitation set up to steal your account details.</p>
                 <div class="social">
                         <h2>social</h2>
                         <ul>
-                            <li><a href="http://rossfenning.co.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
                         </ul>
                 </div><!-- /.social -->
@@ -267,5 +280,14 @@ not an imitation set up to steal your account details.</p>
                 <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
         </footer><!-- /#contentinfo -->
 
+<script type="text/javascript">
+    var disqus_shortname = 'rossfenning';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 </body>
 </html>
