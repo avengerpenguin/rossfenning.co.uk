@@ -16,7 +16,7 @@ using a secure system.
 
 Defining the Difference
 -----------------------
-![](/content/1014151_10151744680330874_612920389_n.jpg)
+
 The first division — and the one discussed in this post — is the
 difference between the process of authentication and that of
 authorisation. Given that many people use one term to cover both
