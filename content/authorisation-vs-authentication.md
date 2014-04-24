@@ -13,7 +13,7 @@ authorisation underpin almost any secure communication. Here, I will
 break down the basic, distinct components of user identification and
 show why the distinction between them is important for designing or even
 using a secure system.
-
+![](/content/images/1014151_10151744680330874_612920389_n.jpg)
 Defining the Difference
 -----------------------
 
