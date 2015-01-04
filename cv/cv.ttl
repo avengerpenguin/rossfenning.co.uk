@@ -1,0 +1,18 @@
+@prefix cv: <http://purl.org/captsolo/resume-rdf/0.2/cv#> .
+@prefix cvbase: <http://purl.org/captsolo/resume-rdf/0.2/base#> .
+
+<http://rossfenning.co.uk/cv> a cv:CV ;
+    cv:aboutPerson <http://rossfenning.co.uk/#me> .
+    cv:cvTitle "Curriculum Vitae" .
+    cv:hasEducation [
+        a cv:Education .
+        cv:degreeType cvbase:EduBachelor .
+        cv:eduMajor "Computer Science" .
+
+    ] .
+    cv:hasWorkHistory [
+        a cv:WorkHistory .
+        cv:employedIn [
+            a cv:Company .
+        ]
+    ] .
