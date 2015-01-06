@@ -1,23 +1,38 @@
 from pelican import signals
-from jinja2 import Template
 from laconia import ThingFactory
-from rdflib import Graph
+from rdflib import Graph, RDFS, OWL, Namespace, RDF
 from jinja2 import Environment, PackageLoader
+from jinja2 import tests
 
 
-env = Environment(
-    loader=PackageLoader('cv', 'templates'),
-    block_start_string='<%', block_end_string='%>',
-    variable_start_string='<=', variable_end_string='=>')
+env = Environment(loader=PackageLoader('cv', 'templates'))
+template = env.get_template('template.md')
+CV = Namespace('http://rdfs.org/resume-rdf/cv.rdfs#')
 
-template = env.get_template('cv.tmpl')
-
-
-def render(sender):
+def render(_sender):
     g = Graph()
     g.parse('cv/cv.ttl', format='turtle')
-    out = template.render(cv=ThingFactory(g)('http://rossfenning.co.uk/cv'))
-    print(out.encode('utf-8'))
+
+    cv = ThingFactory(g)('http://rossfenning.co.uk/cv')
+
+    skills = {
+        level: [skill for skill in cv.cv_hasSkill
+                if skill.cv_skillLevel.any() == level]
+        for level in range(0,6)
+    }
+
+    skill_levels = {
+        5: 'Expert',
+        4: 'Advanced',
+        3: 'Intermediate',
+        2: 'Novice',
+        1: 'Beginner'
+    }
+
+    out = template.render(cv=cv, skills=skills, skill_levels=skill_levels)
+
+    with open('content/pages/cv.md', 'w') as cv_out:
+        cv_out.write(out)
 
 
 def register():

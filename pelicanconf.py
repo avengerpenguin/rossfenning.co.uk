@@ -41,4 +41,7 @@ EXTRA_PATH_METADATA = {
     'google9f5d7359892ca541.html': {'path': 'google9f5d7359892ca541.html'},
     }
 
-PLUGINS = ['cv.cv',]
+PLUGINS = ['cv.cv','microdata']
+
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}/index.html'
