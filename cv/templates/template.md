@@ -1,6 +1,10 @@
 title: {{ cv.cv_cvTitle.any() }}
 slug: cv
+vocab: http://rdfs.org/resume-rdf/cv.rdfs#
+typeof: CV
 
+
+<div property="aboutPerson" typeof="Person" resource="{{cv.cv_aboutPerson.any()}}"></div>
 
 ## Personal Profile
 
@@ -12,7 +16,7 @@ slug: cv
 {% for level in range(5, 0, -1) %}
 ### {{ skill_levels[level] }}
 
-{{ skills[level]|map(attribute='cv_skillName')|map('first')|sort|join(', ') }}
+<span typeof="Skill" property="hasSkill"><span property="skillName">{{ skills[level]|map(attribute='cv_skillName')|map('first')|sort|join('</span></span>, <span typeof="Skill" property="hasSkill"><span property="skillName">') }}</span></span>
 {% endfor %}
 
 
@@ -20,10 +24,10 @@ slug: cv
 
 {% for work_history in cv.cv_hasWorkHistory | sort(attribute='cv_startDate', reverse=True) %}
 {% if work_history.cv_employedIn %}{% if work_history.cv_employedIn.any().cv_Name %}
-<div itemscope itemtype="http://rdfs.org/resume-rdf/cv.rdfs#WorkHistory" markdown="1">
-### {% if work_history.cv_jobTitle %}<span itemprop="http://rdfs.org/resume-rdf/cv.rdfs#jobTitle">{{ work_history.cv_jobTitle|first }}</span> at {% endif %}<span itemscope itemtype="http://rdfs.org/resume-rdf/cv.rdfs#Company" itemprop="http://rdfs.org/resume-rdf/cv.rdfs#employedIn"><span itemprop="http://rdfs.org/resume-rdf/cv.rdfs#Name">{{ work_history.cv_employedIn.any().cv_Name.any() }}</span></span>{% if work_history.cv_startDate %}: <span itemprop="http://rdfs.org/resume-rdf/cv.rdfs#startDate">{{ work_history.cv_startDate.any() }}</span> to {% if work_history.cv_endDate %}<span itemprop="http://rdfs.org/resume-rdf/cv.rdfs#endDate">{{ work_history.cv_endDate.any() }}</span>{% else %}present{% endif %}{% endif %}
+<div typeof="WorkHistory" property="hasWorkHistory" markdown="1">
+### {% if work_history.cv_jobTitle %}<span property="jobTitle">{{ work_history.cv_jobTitle|first }}</span> at {% endif %}<span typeof="Company" property="employedIn"><span property="Name">{{ work_history.cv_employedIn.any().cv_Name.any() }}</span></span>{% if work_history.cv_startDate %}: <span property="startDate">{{ work_history.cv_startDate.any() }}</span> to {% if work_history.cv_endDate %}<span property="endDate">{{ work_history.cv_endDate.any() }}</span>{% else %}present{% endif %}{% endif %}
 
-{% if work_history.cv_jobDescription %}{{ work_history.cv_jobDescription|first }}{% endif %}
+{% if work_history.cv_jobDescription %}{{ work_history.cv_jobDescription.any() }}{% endif %}
 </div>
 {% endif %}{% endif %}
 {% endfor %}
@@ -33,11 +37,11 @@ slug: cv
 
 {% for education in cv.cv_hasEducation | sort(attribute='cv_eduGradDate', reverse=True) %}
 
-<div itemscope itemtype="http://rdfs.org/resume-rdf/cv.rdfs#Education" markdown="1">
+<div typeof="Education" property="hasEducation" markdown="1">
 
-### {{ education.cv_eduMajor.any() }} at {{ education.cv_studiedIn.any().cv_Name.any() }} ({% if education.cv_eduGradDate %}{{ education.cv_eduGradDate.any() }}{% else %}Ongoing{% endif %})
+### <span property="eduMajor">{{ education.cv_eduMajor.any() }}</span> at <span typeof="EducationalOrg" property="studiedIn"><span property="Name">{{ education.cv_studiedIn.any().cv_Name.any() }}</span></span> ({% if education.cv_eduGradDate %}<span property="eduGradDate">{{ education.cv_eduGradDate.any() }}</span>{% else %}Ongoing{% endif %})
 
-{% if education.cv_eduDescription %}{{ education.cv_eduDescription.any() }}{% endif %}
+{% if education.cv_eduDescription %}<span property="eduDescription">{{ education.cv_eduDescription.any() }}</span>{% endif %}
 
 </div>
 
@@ -66,4 +70,3 @@ previous year (1999).
 -   Exploring new music as well as writing/composition
 -   Modern foreign languages
 -   Supporting human rights and environmental work
-

@@ -5,7 +5,9 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://rossfenning.co.uk/cv> a cv:CV ;
+<http://rossfenning.co.uk/cv/#cv> a cv:CV ;
+
+    # Basic info first
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription '''I am primarily a software engineer and web developer (Python, Java, PHP) with
@@ -27,51 +29,53 @@ I am currently working as a Software Engineer at the BBC on the Homepage and
 Location Services search products and am looking for any further contract
 or freelance opportunities as of the beginning of February 2012.''' ;
 
+    # Skills
     cv:hasSkill [ cv:skillName "Java"             ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
-                [ cv:skillName "Python"           ; cv:skillLevel 4 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
-                [ cv:skillName "PHP"              ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/24131#id> ],
-                [ cv:skillName "Prolog"           ; cv:skillLevel 2 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
-                [ cv:skillName "HTML"             ; cv:skillLevel 4 ],
-                [ cv:skillName "XML"              ; cv:skillLevel 5 ],
-                [ cv:skillName "SQL"              ; cv:skillLevel 4 ],
-                [ cv:skillName "LaTeX"            ; cv:skillLevel 4 ],
                 [ cv:skillName "RDF"              ; cv:skillLevel 5 ],
-                [ cv:skillName "SPARQL"           ; cv:skillLevel 3 ],
                 [ cv:skillName "Linked Data"      ; cv:skillLevel 5 ],
                 [ cv:skillName "TDD"              ; cv:skillLevel 5 ],
                 [ cv:skillName "BDD"              ; cv:skillLevel 5 ],
                 [ cv:skillName "Maven"            ; cv:skillLevel 5 ],
                 [ cv:skillName "REST"             ; cv:skillLevel 5 ],
+                [ cv:skillName "Debian"           ; cv:skillLevel 5 ],
+                [ cv:skillName "XML"              ; cv:skillLevel 5 ],
+                [ cv:skillName "JAX-RS"           ; cv:skillLevel 5 ],
+                [ cv:skillName "Python"           ; cv:skillLevel 4 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
+                [ cv:skillName "HTML"             ; cv:skillLevel 4 ],
+                [ cv:skillName "SQL"              ; cv:skillLevel 4 ],
+                [ cv:skillName "LaTeX"            ; cv:skillLevel 4 ],
                 [ cv:skillName "UML"              ; cv:skillLevel 4 ],
                 [ cv:skillName "Apache"           ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU/Linux"        ; cv:skillLevel 4 ],
-                [ cv:skillName "Debian"           ; cv:skillLevel 5 ],
                 [ cv:skillName "CentOS"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Red Hat"          ; cv:skillLevel 4 ],
-                [ cv:skillName "Ubuntu"           ; cv:skillLevel 4 ],
-                [ cv:skillName "JAX-RS"           ; cv:skillLevel 5 ],
-                [ cv:skillName "Django"           ; cv:skillLevel 3 ],
-                [ cv:skillName "Flask"            ; cv:skillLevel 3 ],
-                [ cv:skillName "Git"              ; cv:skillLevel 3 ],
                 [ cv:skillName "Subversion"       ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"             ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"    ; cv:skillLevel 4 ],
                 [ cv:skillName "Jenkins"          ; cv:skillLevel 4 ],
-                [ cv:skillName "Postfix"          ; cv:skillLevel 3 ],
-                [ cv:skillName "Oracle"           ; cv:skillLevel 2 ],
+                [ cv:skillName "Ubuntu"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Spring"           ; cv:skillLevel 4 ],
-                [ cv:skillName "Tomcat"           ; cv:skillLevel 3 ],
-                [ cv:skillName "Kerberos"         ; cv:skillLevel 1 ],
-                [ cv:skillName "Active Directory" ; cv:skillLevel 2 ],
                 [ cv:skillName "Cucumber"         ; cv:skillLevel 4 ],
-                [ cv:skillName "Ruby"             ; cv:skillLevel 3 ],
-                [ cv:skillName "Haskell"          ; cv:skillLevel 1 ],
+                [ cv:skillName "PHP"              ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/24131#id> ],
                 [ cv:skillName "PostgreSQL"       ; cv:skillLevel 3 ],
                 [ cv:skillName "MongoDB"          ; cv:skillLevel 3 ],
                 [ cv:skillName "Wordpress"        ; cv:skillLevel 3 ],
-                [ cv:skillName "MySQL"            ; cv:skillLevel 3 ]
+                [ cv:skillName "MySQL"            ; cv:skillLevel 3 ],
+                [ cv:skillName "SPARQL"           ; cv:skillLevel 3 ],
+                [ cv:skillName "Django"           ; cv:skillLevel 3 ],
+                [ cv:skillName "Flask"            ; cv:skillLevel 3 ],
+                [ cv:skillName "Git"              ; cv:skillLevel 3 ],
+                [ cv:skillName "Postfix"          ; cv:skillLevel 3 ],
+                [ cv:skillName "Ruby"             ; cv:skillLevel 3 ],
+                [ cv:skillName "Tomcat"           ; cv:skillLevel 3 ],
+                [ cv:skillName "Prolog"           ; cv:skillLevel 2 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
+                [ cv:skillName "Oracle"           ; cv:skillLevel 2 ],
+                [ cv:skillName "Active Directory" ; cv:skillLevel 2 ],
+                [ cv:skillName "Kerberos"         ; cv:skillLevel 1 ],
+                [ cv:skillName "Haskell"          ; cv:skillLevel 1 ]
                 ;
 
+    # Employment History
     cv:hasWorkHistory
     [
         a cv:WorkHistory ;
@@ -79,6 +83,12 @@ or freelance opportunities as of the beginning of February 2012.''' ;
         cv:startDate "2012-02" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Senior Software Engineer" ;
+        cv:jobDescription '''I am currently working on the main BBC website
+search functionality as part of the Content Discovery team within BBC Future
+Media. My role is part of a development team working with a Kanban methodology
+to deliver high-quality web services that collect, index and query across
+all BBC online content.
+''';
     ],
     [
         a cv:WorkHistory ;
@@ -165,6 +175,7 @@ had to test speed and statistics for the network interfaces and the
 drivers on both Linux and Windows servers.''' ;
     ] ;
 
+    # Education and Qualifications
     cv:hasEducation [
         a cv:Education ;
         cv:degreeType cvbase:EduMaster ;
@@ -189,12 +200,14 @@ Cambridge University Language Programme.''' ;
     ] .
 
 
+# Little bit about me with some linking to other datasets about publications, projects, etc.
 <http://rossfenning.co.uk/#me> a cv:Person ;
     cv:hasNationality "British" ;
     cv:hasCitizenship <http://www.daml.org/2001/09/countries/countries.daml#GB> ;
     owl:sameAs <http://id.crossref.org/contributor/ross-fenning-16fs0eva8w8vu> ;
     dcterms:creator <http://dx.doi.org/10.1007/978-3-662-43745-2_33> .
 
+# Just to be clear that these are interchangeable since one is used above
 <http://dx.doi.org/10.1007/978-3-662-43745-2_33> owl:sameAs <doi:10.1007/978-3-662-43745-2_33> .
 
 

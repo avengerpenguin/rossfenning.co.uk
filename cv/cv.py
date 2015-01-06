@@ -13,7 +13,7 @@ def render(_sender):
     g = Graph()
     g.parse('cv/cv.ttl', format='turtle')
 
-    cv = ThingFactory(g)('http://rossfenning.co.uk/cv')
+    cv = ThingFactory(g)('http://rossfenning.co.uk/cv/#cv')
 
     skills = {
         level: [skill for skill in cv.cv_hasSkill

@@ -28,7 +28,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = './pelican-bootstrap3'
+THEME = './theme'
 
 GOOGLE_AD_CLIENT = 'pub-7863038150136152'
 GOOGLE_AD_SLOT = '2849293582'
