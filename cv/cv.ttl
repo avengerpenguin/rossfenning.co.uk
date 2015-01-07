@@ -100,7 +100,18 @@ search functionality as part of the Content Discovery team within BBC Future
 Media. My role is part of a development team working with a Kanban methodology
 to deliver high-quality web services that collect, index and query across
 all BBC online content.
-''';
+
+The spread of technologies, domains and systems involve lead to a classic
+Enterprise Integration project, but in my role I have been driving to lead on
+introducing principles from REST architectures (e.g. HATEOAS, hypermedia)
+and even Linked Data to create long-running and evolvable service applications,
+which minimises the amount of bespoke integration code required.
+
+The project is primarily written in Java, with Ruby used extensively for
+integration and acceptance testing of services. The search page itself uses
+PHP and Javascript, but the bulk of the work is in the Java applications that
+acquire and process the data. We use Spring and JAX-RS (Jersey) for individual
+services, with some use of Apache Camel and ActiveMQ where appropriate.''';
     ],
     [
         a cv:WorkHistory ;
@@ -108,16 +119,12 @@ all BBC online content.
         cv:startDate "2010-12" ;
         cv:endDate "2012-02" ;
         cv:jobTitle "Software Engineer" ;
-        cv:jobDescription '''I have been working in the Future Media team at BBC Wales/Cymru as a
-software engineer on the new BBC Home Page. Primarily, I am offering
-skills as a Java backend service developer to create data feeds for part
+        cv:jobDescription '''I worked as a contractor in the Future Media team
+at BBC Wales/Cymru as a
+software engineer on the new BBC Home Page. My role was a working as a
+Java backend service developer to create data feeds for part
 of the new home page, but also contribute on PHP, Javascript, HTML
-development and any other tasks as needed.
-
-As the Home Page project has been winding down, I have also been doing
-backend REST API and Apache Solr work to provide smart searching of
-geographical locations for both the new BBC Homepage and the new BBC
-Weather website.''' ;
+development and any other tasks as needed.''' ;
     ],
     [
         a cv:WorkHistory ;
