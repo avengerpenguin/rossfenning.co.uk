@@ -10,24 +10,35 @@
     # Basic info first
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
-    cv:cvDescription '''I am primarily a software engineer and web developer (Python, Java, PHP) with
-6 years experience in the industry backed by a degree in Computer Science.
-This gives me an methodical, yet adaptable, creative and innovative approach
-to problem solving. I also have experience in maintaining GNU/Linux and Unix
-systems (Apache, MySQL, Postfix, LDAP).
+    cv:cvDescription '''I am currently working as a Senior Software Enginner in
+BBC Future Media with 10 years' industry experience. My undegraduate degree was
+in Computer Science and I am enrolled in a Software Engineer MSc degree run
+jointly by the University of Bradford and the BBC.
 
-I have a passion for seeking new challenges with new projects -- I enjoy
-keeping  up to date with emerging technologies and techniques so as to be able
-to find and apply the best solution to any given problem.
+I consider myself a general software engineer with a broad experience across
+a number of languages, services, tools and libraries. I presently have a strong
+interest in RDF, Linked Data and the semantic web as well as development process
+methodologies such as Agile, Scrum, Kanban and BDD.
 
-My team personality is a balance between a methodical and logical problem
-solving approach and initiating new ideas. I like to think anything can be
-achieved with the proper planning and creative thinking. I thrive where new
-ideas and communication are encouraged.
+I also have interests in domain modelling, data architecture and systems design.
+In June 2014, I published and presented a paper at the CAiSE 2014 conference
+in which I explored using more formal modelling techniques from academia for
+practical, enterprise systems and also touched on parallels between
+Soft Systems Methodology and Agile whilst exploring SSM's use to bring
+wider context to Agile software development practices.
 
-I am currently working as a Software Engineer at the BBC on the Homepage and
-Location Services search products and am looking for any further contract
-or freelance opportunities as of the beginning of February 2012.''' ;
+My present role involves developing Java-based RESTful web services for the
+BBC website's search and previously I have worked on the main home page and
+also the location search used by parts of the website such as BBC Weather. I have
+worked with Java libraries such as Jersey, Apache CXF, Apache Camel, Lucene
+and services such as ActiveMQ, Solr, Elasticsearch and Apache Tomcat.
+
+Previous projects have allowed me to work with PHP, Javascript, HTML, CSS and
+I am beginning to pick up Scala and the Play framework. I use Ruby substantially
+for integration and acceptance testing and Python for supporting scripts and tools.
+I use Python and both Django and Flask for all personal projects and I am
+active in Python community events such as PyCon UK and Python User Group
+meetups.''';
 
     # Skills
     cv:hasSkill [ cv:skillName "Java"             ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
@@ -46,6 +57,7 @@ or freelance opportunities as of the beginning of February 2012.''' ;
                 [ cv:skillName "LaTeX"            ; cv:skillLevel 4 ],
                 [ cv:skillName "UML"              ; cv:skillLevel 4 ],
                 [ cv:skillName "Apache"           ; cv:skillLevel 4 ],
+                [ cv:skillName "Apache Camel"     ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU/Linux"        ; cv:skillLevel 4 ],
                 [ cv:skillName "CentOS"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Red Hat"          ; cv:skillLevel 4 ],
