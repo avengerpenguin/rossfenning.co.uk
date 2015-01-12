@@ -11,8 +11,10 @@ CV = Namespace('http://rdfs.org/resume-rdf/cv.rdfs#')
 
 def render(_sender):
     g = Graph()
-    g.parse('cv/cv.ttl', format='turtle')
+    # TODO: make configurable
+    g.parse('content/extra/cv.ttl', format='turtle')
 
+    # TODO: make configurable
     cv = ThingFactory(g)('http://rossfenning.co.uk/cv/#cv')
 
     skills = {
@@ -31,6 +33,7 @@ def render(_sender):
 
     out = template.render(cv=cv, skills=skills, skill_levels=skill_levels)
 
+    # TODO: make configurable
     with open('content/pages/cv.md', 'w') as cv_out:
         cv_out.write(out)
 

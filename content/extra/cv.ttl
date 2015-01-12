@@ -84,6 +84,7 @@ meetups.''';
                 [ cv:skillName "Oracle"           ; cv:skillLevel 2 ],
                 [ cv:skillName "Active Directory" ; cv:skillLevel 2 ],
                 [ cv:skillName "Kerberos"         ; cv:skillLevel 1 ],
+                [ cv:skillName "Clojure"          ; cv:skillLevel 1 ],
                 [ cv:skillName "Haskell"          ; cv:skillLevel 1 ]
                 ;
 
