@@ -31,7 +31,9 @@ help:
 
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
-	pdflatex cv/cv.tex -o $(OUTPUTDIR)/cv.pdf
+	pdflatex cv/cv.tex -halt-on-error -interaction errorstopmode
+	mv cv.pdf $(OUTPUTDIR)/
+	rm cv.log cv.aux
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
