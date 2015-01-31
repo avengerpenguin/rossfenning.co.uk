@@ -1,0 +1,74 @@
+\documentclass[10pt]{article}
+
+\usepackage{fullpage}
+\usepackage{svn}
+
+%\addtolength{}{}
+
+\begin{document}
+
+\title{\bf{Curriculum Vitae}}
+\author{
+  Ross Fenning\\
+  Mobile: 07763 616456\\
+  e-mail: cv@rossfenning.co.uk
+}
+
+\SVNdate $Date$
+\maketitle
+
+\hrulefill
+
+\section*{Personal Profile}
+((( cv.cv_cvDescription.any() )))
+
+\section*{Skills}
+
+((* for level in range(5, 2, -1) *))
+\subsection*{((( skill_levels[level] )))}
+
+((( skills[level]|map(attribute='cv_skillName')|map('first')|sort|join(', ') )))
+((* endfor *))
+
+
+\section*{Work Experience}
+
+((* for work_history in cv.cv_hasWorkHistory | sort(attribute='cv_startDate', reverse=True) *))
+((* if work_history.cv_employedIn *))((* if work_history.cv_employedIn.any().cv_Name *))
+\subsection*{((* if work_history.cv_jobTitle *))((( work_history.cv_jobTitle|first ))) at ((* endif *))((( work_history.cv_employedIn.any().cv_Name.any() )))((* if work_history.cv_startDate *)): ((( work_history.cv_startDate.any() ))) to ((* if work_history.cv_endDate *))((( work_history.cv_endDate.any() )))((* else *))present((* endif *))((* endif *))}
+
+((* if work_history.cv_jobDescription *))((( work_history.cv_jobDescription.any() )))((* endif *))
+((* endif *))((* endif *))
+((* endfor *))
+
+
+\section*{Education}
+
+((* for education in cv.cv_hasEducation | sort(attribute='cv_eduGradDate', reverse=True) *))
+
+\subsection*{((( education.cv_eduMajor.any() ))) at ((( education.cv_studiedIn.any().cv_Name.any() ))) [((* if education.cv_eduGradDate *))((( education.cv_eduGradDate.any() )))((* else *))Ongoing((* endif *))]}
+
+((* if education.cv_eduDescription *))((( education.cv_eduDescription.any() )))((* endif *))
+
+((* endfor *))
+
+
+\section*{Interests}
+\begin{itemize}
+
+\item
+Natural language processing, artificial intelligence, linguistics and logic
+\item
+Folk and traditional music including playing bodhr\'{a}n
+\item
+Exploring new music as well as writing/composition
+\item
+Modern foreign languages
+\item
+Supporting human rights and environmental work
+
+
+\end{itemize}
+
+
+\end{document}

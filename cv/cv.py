@@ -5,9 +5,20 @@ from jinja2 import Environment, PackageLoader
 from jinja2 import tests
 
 
-env = Environment(loader=PackageLoader('cv', 'templates'))
-template = env.get_template('template.md')
+env_md = Environment(loader=PackageLoader('cv', 'templates'))
+template_md = env_md.get_template('template.md')
+
+env_tex = Environment(loader=PackageLoader('cv', 'templates'))
+env_tex.block_start_string = '((*'
+env_tex.block_end_string = '*))'
+env_tex.variable_start_string = '((('
+env_tex.variable_end_string = ')))'
+env_tex.comment_start_string = '((='
+env_tex.comment_end_string = '=))'
+template_latex = env_tex.get_template('template.tex')
+
 CV = Namespace('http://rdfs.org/resume-rdf/cv.rdfs#')
+
 
 def render(_sender):
     g = Graph()
@@ -31,10 +42,16 @@ def render(_sender):
         1: 'Beginner'
     }
 
-    out = template.render(cv=cv, skills=skills, skill_levels=skill_levels)
+    out = template_md.render(cv=cv, skills=skills, skill_levels=skill_levels)
 
     # TODO: make configurable
     with open('content/pages/cv.md', 'w') as cv_out:
+        cv_out.write(out)
+
+    out = template_latex.render(cv=cv, skills=skills, skill_levels=skill_levels)
+
+    # TODO: make configurable
+    with open('cv/cv.tex', 'w') as cv_out:
         cv_out.write(out)
 
 

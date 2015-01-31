@@ -27,14 +27,14 @@ practical, enterprise systems and also touched on parallels between
 Soft Systems Methodology and Agile whilst exploring SSM's use to bring
 wider context to Agile software development practices.
 
-My present role involves developing Java-based RESTful web services for the
-BBC website's search and previously I have worked on the main home page and
-also the location search used by parts of the website such as BBC Weather. I have
-worked with Java libraries such as Jersey, Apache CXF, Apache Camel, Lucene
+I have worked on a few different projects within BBC Future Media
+with a primary focus on developing Java-based RESTful web services using
+Java libraries such as Spring, Jersey, Apache CXF, Apache Camel, Lucene
 and services such as ActiveMQ, Solr, Elasticsearch and Apache Tomcat.
 
-Previous projects have allowed me to work with PHP, Javascript, HTML, CSS and
-I am beginning to pick up Scala and the Play framework. I use Ruby substantially
+My current project uses NodeJS and Amazon Web Services and
+past projects have allowed me to work with PHP, Javascript, HTML, CSS.
+I use Ruby substantially
 for integration and acceptance testing and Python for supporting scripts and tools.
 I use Python and both Django and Flask for all personal projects and I am
 active in Python community events such as PyCon UK and Python User Group

@@ -35,13 +35,12 @@ GOOGLE_AD_SLOT = '2849293582'
 GOOGLE_AD_WIDTH = 160
 GOOGLE_AD_HEIGHT = 600
 
-STATIC_PATHS = ['images', 'extra/CNAME', 'papers', 'extra/google9f5d7359892ca541.html']
+STATIC_PATHS = ['images', 'extra/CNAME', 'papers']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
-    'google9f5d7359892ca541.html': {'path': 'google9f5d7359892ca541.html'},
     }
 
-PLUGINS = ['cv.cv','microdata']
+PLUGINS = ['cv.cv']
 
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
