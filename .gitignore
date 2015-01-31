@@ -4,3 +4,5 @@
 
 content/pages/cv.md
 /cache
+/.idea
+/venv
