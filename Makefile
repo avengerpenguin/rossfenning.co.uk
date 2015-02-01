@@ -62,7 +62,7 @@ stopserver:
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-	touch $(OUTPUTDIR)/google9f5d7359892ca541.html
+	echo 'google-site-verification: google9f5d7359892ca541.html' >$(OUTPUTDIR)/google9f5d7359892ca541.html
 	pdflatex cv/cv.tex -halt-on-error -interaction errorstopmode
 	mv cv.pdf $(OUTPUTDIR)/
 	rm cv.log cv.aux
