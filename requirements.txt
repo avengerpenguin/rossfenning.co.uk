@@ -5,7 +5,7 @@ html5lib==0.9999999
 isodate==0.5.4
 Jinja2==2.8
 laconia==0.3.0
-Markdown==2.6.5
+Markdown==2.6.6
 MarkupSafe==0.23
 microdata==0.5.5
 pelican==3.6.3
