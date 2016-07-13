@@ -12,7 +12,7 @@ pelican==3.6.3
 Pygments==2.1.3
 pyparsing==2.1.5
 python-dateutil==2.5.3
-pytz==2016.4
+pytz==2016.6
 rdflib==4.2.1
 six==1.10.0
 Unidecode==0.04.19
