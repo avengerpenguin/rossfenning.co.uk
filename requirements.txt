@@ -8,7 +8,7 @@ laconia==0.3.0
 Markdown==2.6.7
 MarkupSafe==0.23
 microdata==0.6.1
-pelican==3.6.3
+pelican==3.7.0
 Pygments==2.1.3
 pyparsing==2.1.10
 python-dateutil==2.6.0
