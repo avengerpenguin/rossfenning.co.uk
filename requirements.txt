@@ -3,7 +3,7 @@ docutils==0.13.1
 feedgenerator==1.9
 html5lib==0.999999999
 isodate==0.5.4
-Jinja2==2.9.1
+Jinja2==2.9.2
 laconia==0.3.0
 Markdown==2.6.7
 MarkupSafe==0.23
