@@ -10,33 +10,29 @@
     # Basic info first
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
-    cv:cvDescription '''I am currently working as a Senior Software Engineer in
-    BBC Future Media with 10 years' industry experience. My undergraduate degree
-    was in Computer Science and I am enrolled in a Software Engineer MSc degree
+    cv:cvDescription '''I am currently working as a Principal Software Engineer in
+    BBC Future Media with over 11 years' industry experience. My undergraduate degree
+    was an MA in Computer Science from the University of Cambridge
+    and I have recently completed an MSc in Software Engineering and
+    Internet Architecture
     run jointly by the University of Bradford and the BBC.
-
-I consider myself a general software engineer with a broad experience across a
-number of languages, services, tools and libraries. I presently have a strong
-interest in REST, RDF, Linked Data and the semantic web as well as development
-process methodologies such as Agile, Scrum, Kanban and BDD.
-
+    
+I consider myself a general software and "DevOps" engineer with a broad experience across a
+    number of languages, services, tools and libraries. I presently have a strong
+    interest in REST, RDF, Linked Data and the semantic web as well as development
+    process methodologies such as Agile, Scrum, Kanban and BDD.
+    
 I also have interests in domain modelling, data architecture and systems design.
 In June 2014, I published and presented a paper at the CAiSE 2014 conference in
-which I explored using more formal modelling techniques from academia for
-practical, enterprise systems and also touched on parallels between Soft Systems
-Methodology and Agile whilst exploring SSM's use to bring wider context to Agile
-software development practices.
-
-I have worked on a few different projects within BBC Future Media with a primary
-focus on developing Java-based, RESTful web services using Java libraries such
-as Spring, Jersey, Apache CXF, Apache Camel, Lucene and services such as
-ActiveMQ, Solr, Elasticsearch and Apache Tomcat.
-
-My current project uses NodeJS and Amazon Web Services whilst past projects have
-allowed me to work with PHP, Javascript, HTML, CSS. I use Ruby substantially for
-integration and acceptance testing and Python for supporting scripts and tools.
-I use Python and both Django and Flask for all personal projects and I am active
-in Python community events such as PyCon UK.''';
+    which I explored using more formal modelling techniques from academia for
+    practical, enterprise systems and also touched on parallels between Soft Systems
+    Methodology and Agile whilst exploring SSM's use to bring wider context to Agile
+    software development practices.
+    
+My responsibilities in the BBC have been within the main BBC Homepage,
+        Search and the global navigation across the website. This has
+    allowed me to work with the languages Java, PHP, Ruby, Python and
+    JavaScript (including Node.js).''';
 
     # Skills
     cv:hasSkill [ cv:skillName "Java"             ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
@@ -48,8 +44,15 @@ in Python community events such as PyCon UK.''';
                 [ cv:skillName "REST"             ; cv:skillLevel 5 ],
                 [ cv:skillName "Debian"           ; cv:skillLevel 5 ],
                 [ cv:skillName "XML"              ; cv:skillLevel 5 ],
+                [ cv:skillName "RDF"              ; cv:skillLevel 4 ],
+                [ cv:skillName "Agile"              ; cv:skillLevel 5 ],
+                [ cv:skillName "Kanban"              ; cv:skillLevel 5 ],
+                [ cv:skillName "Scrum"              ; cv:skillLevel 4 ],
+                [ cv:skillName "Docker"              ; cv:skillLevel 4 ],
+                [ cv:skillName "DevOps"           ; cv:skillLevel 4 ],
+                [ cv:skillName "Soft Systems Methodology (SSM)"           ; cv:skillLevel 3 ],
                 [ cv:skillName "JAX-RS"           ; cv:skillLevel 5 ],
-                [ cv:skillName "Python"           ; cv:skillLevel 4 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
+                [ cv:skillName "Python"           ; cv:skillLevel 5 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
                 [ cv:skillName "HTML"             ; cv:skillLevel 4 ],
                 [ cv:skillName "SQL"              ; cv:skillLevel 4 ],
                 [ cv:skillName "LaTeX"            ; cv:skillLevel 4 ],
@@ -57,8 +60,9 @@ in Python community events such as PyCon UK.''';
                 [ cv:skillName "Apache"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Apache Camel"     ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU/Linux"        ; cv:skillLevel 4 ],
-                [ cv:skillName "CentOS"           ; cv:skillLevel 4 ],
-                [ cv:skillName "Red Hat"          ; cv:skillLevel 4 ],
+                [ cv:skillName "AWS"              ; cv:skillLevel 4 ],
+                [ cv:skillName "CentOS"           ; cv:skillLevel 5 ],
+                [ cv:skillName "Red Hat"          ; cv:skillLevel 5 ],
                 [ cv:skillName "Subversion"       ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"             ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"    ; cv:skillLevel 4 ],
@@ -72,11 +76,11 @@ in Python community events such as PyCon UK.''';
                 [ cv:skillName "Wordpress"        ; cv:skillLevel 3 ],
                 [ cv:skillName "MySQL"            ; cv:skillLevel 3 ],
                 [ cv:skillName "SPARQL"           ; cv:skillLevel 3 ],
-                [ cv:skillName "Django"           ; cv:skillLevel 3 ],
+                [ cv:skillName "Django"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Flask"            ; cv:skillLevel 3 ],
-                [ cv:skillName "Git"              ; cv:skillLevel 3 ],
+                [ cv:skillName "Git"              ; cv:skillLevel 4 ],
                 [ cv:skillName "Postfix"          ; cv:skillLevel 3 ],
-                [ cv:skillName "Ruby"             ; cv:skillLevel 3 ],
+                [ cv:skillName "Ruby"             ; cv:skillLevel 4 ],
                 [ cv:skillName "Tomcat"           ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"           ; cv:skillLevel 2 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "Oracle"           ; cv:skillLevel 2 ],
@@ -91,8 +95,46 @@ in Python community events such as PyCon UK.''';
     [
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
-        cv:startDate "2012-02" ;
+        cv:startDate "2015-06" ;
         cv:isCurrent cvbase:True ;
+        cv:jobTitle "Principal Software Engineer" ;
+                    cv:jobDescription '''In early 2015, I moved to a new "Navigation"
+                    project within the same Content Discovery team as the BBC Search
+                    product in my previous job title.
+
+This project allowed me to take a position as a main engineer reporting
+                    to one product manager and technical lead and working with at most
+                    one graduate engineer .
+This gave me great opportunity to develop skills
+                    and best practices for bootstrapping a new project on
+                    Amazon Web Services .
+
+The global nature of navigation across the whole BBC website gave me
+                    much opportunity to engage with many teams across the BBC Digital
+                    division (now named Design and Engineering).
+
+The combination of taking a principal technical position on the project
+                    and my shift to engaging with a lot more of the business side of our
+                    work, I was able to achieve an in-role promotion
+                    to the title "Principal Software Engineer" .
+
+Internal changes in the wider team have more recently expanded my remit
+                    as one of two principal engineers across all of BBC Homepage, Search
+                    and the global navigation.
+My role now has more emphasis on supporting three
+                    teams of engineers, facilitating technical decisions with my experience
+                    and taking some ownership of forthcoming work on
+                    the roadmap that has strong need for technical
+                    input and championing to the right people in the
+                    business.
+''';
+    ],
+    [
+        a cv:WorkHistory ;
+        cv:employedIn _:bbcnorth ;
+        cv:startDate "2012-02" ;
+        cv:endDate "2015-06" ;
+        cv:isCurrent cvbase:False ;
         cv:jobTitle "Senior Software Engineer" ;
         cv:jobDescription '''I am currently working on the main BBC website
 search functionality as part of the Content Discovery team within BBC Future
@@ -199,11 +241,11 @@ drivers on both Linux and Windows servers.''' ;
         cv:degreeType cvbase:EduMaster ;
         cv:eduMajor "MSc Software Engineering" ;
         cv:eduStartDate "2012" ;
+        cv:eduGradDate "2016" ;
         cv:studiedIn _:bradford ;
-        cv:eduDescription '''I am currently working towards an MSc
-in Software Engineering awarded by Bradford University and
-but run in conjunction with the BBC. I have completed modules in Systems Design,
-Data Mining, Advanced Database Systems, Security, Android Development''' ;
+        cv:eduDescription '''I completed an MSc programme and degree
+in Software Engineering and Internet Architecture awarded by Bradford University and
+but run in conjunction with the BBC.''' ;
     ],
     [
         a cv:Education ;
