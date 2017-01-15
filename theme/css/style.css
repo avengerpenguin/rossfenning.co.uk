@@ -67,6 +67,12 @@ body {
     margin-right: 3px;
 }
 
+#sidebar li.adsense {
+    width: 160px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
 a, a:hover {
     color: inherit;
 }
