@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning</title><link href="/" rel="alternate"></link><link href="/feeds/social-media.atom.xml" rel="self"></link><id>/</id><updated>2010-09-15T14:15:00+01:00</updated><entry><title>Is Everything on Facebook Public?</title><link href="/is-everything-on-facebook-public.html" rel="alternate"></link><updated>2010-09-15T14:15:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-09-15:is-everything-on-facebook-public.html</id><summary type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning - Social Media</title><link href="http://rossfenning.co.uk/" rel="alternate"></link><link href="http://rossfenning.co.uk/feeds/social-media.atom.xml" rel="self"></link><id>http://rossfenning.co.uk/</id><updated>2010-09-15T14:15:00+01:00</updated><entry><title>Is Everything on Facebook Public?</title><link href="http://rossfenning.co.uk/is-everything-on-facebook-public.html" rel="alternate"></link><published>2010-09-15T14:15:00+01:00</published><updated>2010-09-15T14:15:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-09-15:/is-everything-on-facebook-public.html</id><summary type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
+for some users with &lt;a href="http://www.telegraph.co.uk/technology/facebook/6027302/Woman-sacked-after-abusing-boss-on-Facebook.html"&gt;one woman getting fired for speaking ill of her
+boss,&lt;/a&gt;
+&lt;a href="http://www.cbc.ca/canada/montreal/story/2009/11/19/quebec-facebook-sick-leave-benefits.html"&gt;another woman losing insurance benefits after the company dug up photos
+of her on
+holiday&lt;/a&gt;
+and &lt;a href="http://news.bbc.co.uk/1/hi/uk/7703129.stm"&gt;thirteen employees of Virgin Atlantic being sacked for …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
 for some users with &lt;a href="http://www.telegraph.co.uk/technology/facebook/6027302/Woman-sacked-after-abusing-boss-on-Facebook.html"&gt;one woman getting fired for speaking ill of her
 boss,&lt;/a&gt;
 &lt;a href="http://www.cbc.ca/canada/montreal/story/2009/11/19/quebec-facebook-sick-leave-benefits.html"&gt;another woman losing insurance benefits after the company dug up photos
@@ -173,4 +179,4 @@ could all end up public, be it through carelessness or malice.&lt;/p&gt;
 cases a year and while they maintain a walled garden whereby users
 cannot easily leave for another service, it seems these cases will have
 little effect on their numbers. Perhaps a stronger and simpler incentive
-would be the economic pressures from true consumer freedom.&lt;/p&gt;</summary><category term="social media"></category><category term="facebook"></category><category term="privacy"></category></entry></feed>
+would be the economic pressures from true consumer freedom.&lt;/p&gt;</content><category term="social media"></category><category term="facebook"></category><category term="privacy"></category></entry></feed>

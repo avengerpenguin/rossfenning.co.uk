@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning</title><link href="/" rel="alternate"></link><link href="/feeds/security.atom.xml" rel="self"></link><id>/</id><updated>2010-07-15T18:42:00+01:00</updated><entry><title>Trust vs. Identity</title><link href="/trust-vs-identity.html" rel="alternate"></link><updated>2010-07-15T18:42:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-07-15:trust-vs-identity.html</id><summary type="html">&lt;p&gt;As stated in the &lt;a href="/authorisation-vs-authentication.html"&gt;previous article about the difference between
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning - Security</title><link href="http://rossfenning.co.uk/" rel="alternate"></link><link href="http://rossfenning.co.uk/feeds/security.atom.xml" rel="self"></link><id>http://rossfenning.co.uk/</id><updated>2010-07-15T18:42:00+01:00</updated><entry><title>Trust vs. Identity</title><link href="http://rossfenning.co.uk/trust-vs-identity.html" rel="alternate"></link><published>2010-07-15T18:42:00+01:00</published><updated>2010-07-15T18:42:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-07-15:/trust-vs-identity.html</id><summary type="html">&lt;p&gt;As stated in the &lt;a href="http://rossfenning.co.uk/authorisation-vs-authentication.html"&gt;previous article about the difference between
+authentication and authorisation&lt;/a&gt;,
+it is important to understand the different aspects of security in order
+to control access to resources in as secure and as user-friendly a way
+as possible. However, the step of authentication itself — the act of
+ascertaining …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As stated in the &lt;a href="http://rossfenning.co.uk/authorisation-vs-authentication.html"&gt;previous article about the difference between
 authentication and authorisation&lt;/a&gt;,
 it is important to understand the different aspects of security in order
 to control access to resources in as secure and as user-friendly a way
@@ -183,7 +188,11 @@ trust their resistance to forgery.&lt;/p&gt;
 &lt;p&gt;For any secure setup — whether web-based or in the physical world — it
 is essential not only to verify the effectiveness of your identification
 process, but also to ascertain the trustworthiness of the information
-you are storing and using for identification in the first place.&lt;/p&gt;</summary><category term="authentication"></category><category term="authorisation"></category><category term="trust"></category><category term="identity"></category><category term="security"></category></entry><entry><title>Authorisation vs. Authentication and why we should care</title><link href="/authorisation-vs-authentication.html" rel="alternate"></link><updated>2010-06-15T19:37:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-06-15:authorisation-vs-authentication.html</id><summary type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
+you are storing and using for identification in the first place.&lt;/p&gt;</content><category term="authentication"></category><category term="authorisation"></category><category term="trust"></category><category term="identity"></category><category term="security"></category></entry><entry><title>Authorisation vs. Authentication and why we should care</title><link href="http://rossfenning.co.uk/authorisation-vs-authentication.html" rel="alternate"></link><published>2010-06-15T19:37:00+01:00</published><updated>2010-06-15T19:37:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-06-15:/authorisation-vs-authentication.html</id><summary type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
+applications and services, users are asked to state and prove who they
+are. Whether this is to make sure only that user edits their own profile
+or it is for secure financial transactions, identity, trust and
+authorisation underpin almost any …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
 applications and services, users are asked to state and prove who they
 are. Whether this is to make sure only that user edits their own profile
 or it is for secure financial transactions, identity, trust and
@@ -390,4 +399,4 @@ discussed is:&lt;/p&gt;
 article to show how the same theory behind authentication is important
 for the reverse process of a user verifying a website is who it claims
 to be, e.g. that you are looking at your bank's legitimate website and
-not an imitation set up to steal your account details.&lt;/p&gt;</summary><category term="authentication"></category><category term="authorisation"></category><category term="security"></category><category term="identity"></category></entry></feed>
+not an imitation set up to steal your account details.&lt;/p&gt;</content><category term="authentication"></category><category term="authorisation"></category><category term="security"></category><category term="identity"></category></entry></feed>

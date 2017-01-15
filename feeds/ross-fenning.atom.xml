@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning</title><link href="/" rel="alternate"></link><link href="/feeds/ross-fenning.atom.xml" rel="self"></link><id>/</id><updated>2010-09-15T14:15:00+01:00</updated><entry><title>Is Everything on Facebook Public?</title><link href="/is-everything-on-facebook-public.html" rel="alternate"></link><updated>2010-09-15T14:15:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-09-15:is-everything-on-facebook-public.html</id><summary type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Ross Fenning - Ross Fenning</title><link href="http://rossfenning.co.uk/" rel="alternate"></link><link href="http://rossfenning.co.uk/feeds/ross-fenning.atom.xml" rel="self"></link><id>http://rossfenning.co.uk/</id><updated>2010-09-15T14:15:00+01:00</updated><entry><title>Is Everything on Facebook Public?</title><link href="http://rossfenning.co.uk/is-everything-on-facebook-public.html" rel="alternate"></link><published>2010-09-15T14:15:00+01:00</published><updated>2010-09-15T14:15:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-09-15:/is-everything-on-facebook-public.html</id><summary type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
+for some users with &lt;a href="http://www.telegraph.co.uk/technology/facebook/6027302/Woman-sacked-after-abusing-boss-on-Facebook.html"&gt;one woman getting fired for speaking ill of her
+boss,&lt;/a&gt;
+&lt;a href="http://www.cbc.ca/canada/montreal/story/2009/11/19/quebec-facebook-sick-leave-benefits.html"&gt;another woman losing insurance benefits after the company dug up photos
+of her on
+holiday&lt;/a&gt;
+and &lt;a href="http://news.bbc.co.uk/1/hi/uk/7703129.stm"&gt;thirteen employees of Virgin Atlantic being sacked for …&lt;/a&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Facebook has been home to no shortage of awkward or destructive moments
 for some users with &lt;a href="http://www.telegraph.co.uk/technology/facebook/6027302/Woman-sacked-after-abusing-boss-on-Facebook.html"&gt;one woman getting fired for speaking ill of her
 boss,&lt;/a&gt;
 &lt;a href="http://www.cbc.ca/canada/montreal/story/2009/11/19/quebec-facebook-sick-leave-benefits.html"&gt;another woman losing insurance benefits after the company dug up photos
@@ -173,7 +179,12 @@ could all end up public, be it through carelessness or malice.&lt;/p&gt;
 cases a year and while they maintain a walled garden whereby users
 cannot easily leave for another service, it seems these cases will have
 little effect on their numbers. Perhaps a stronger and simpler incentive
-would be the economic pressures from true consumer freedom.&lt;/p&gt;</summary><category term="social media"></category><category term="facebook"></category><category term="privacy"></category></entry><entry><title>Trust vs. Identity</title><link href="/trust-vs-identity.html" rel="alternate"></link><updated>2010-07-15T18:42:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-07-15:trust-vs-identity.html</id><summary type="html">&lt;p&gt;As stated in the &lt;a href="/authorisation-vs-authentication.html"&gt;previous article about the difference between
+would be the economic pressures from true consumer freedom.&lt;/p&gt;</content><category term="social media"></category><category term="facebook"></category><category term="privacy"></category></entry><entry><title>Trust vs. Identity</title><link href="http://rossfenning.co.uk/trust-vs-identity.html" rel="alternate"></link><published>2010-07-15T18:42:00+01:00</published><updated>2010-07-15T18:42:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-07-15:/trust-vs-identity.html</id><summary type="html">&lt;p&gt;As stated in the &lt;a href="http://rossfenning.co.uk/authorisation-vs-authentication.html"&gt;previous article about the difference between
+authentication and authorisation&lt;/a&gt;,
+it is important to understand the different aspects of security in order
+to control access to resources in as secure and as user-friendly a way
+as possible. However, the step of authentication itself — the act of
+ascertaining …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As stated in the &lt;a href="http://rossfenning.co.uk/authorisation-vs-authentication.html"&gt;previous article about the difference between
 authentication and authorisation&lt;/a&gt;,
 it is important to understand the different aspects of security in order
 to control access to resources in as secure and as user-friendly a way
@@ -357,7 +368,11 @@ trust their resistance to forgery.&lt;/p&gt;
 &lt;p&gt;For any secure setup — whether web-based or in the physical world — it
 is essential not only to verify the effectiveness of your identification
 process, but also to ascertain the trustworthiness of the information
-you are storing and using for identification in the first place.&lt;/p&gt;</summary><category term="authentication"></category><category term="authorisation"></category><category term="trust"></category><category term="identity"></category><category term="security"></category></entry><entry><title>Authorisation vs. Authentication and why we should care</title><link href="/authorisation-vs-authentication.html" rel="alternate"></link><updated>2010-06-15T19:37:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:,2010-06-15:authorisation-vs-authentication.html</id><summary type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
+you are storing and using for identification in the first place.&lt;/p&gt;</content><category term="authentication"></category><category term="authorisation"></category><category term="trust"></category><category term="identity"></category><category term="security"></category></entry><entry><title>Authorisation vs. Authentication and why we should care</title><link href="http://rossfenning.co.uk/authorisation-vs-authentication.html" rel="alternate"></link><published>2010-06-15T19:37:00+01:00</published><updated>2010-06-15T19:37:00+01:00</updated><author><name>Ross Fenning</name></author><id>tag:rossfenning.co.uk,2010-06-15:/authorisation-vs-authentication.html</id><summary type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
+applications and services, users are asked to state and prove who they
+are. Whether this is to make sure only that user edits their own profile
+or it is for secure financial transactions, identity, trust and
+authorisation underpin almost any …&lt;/p&gt;</summary><content type="html">&lt;p&gt;At some point whilst interacting with many websites or web-based
 applications and services, users are asked to state and prove who they
 are. Whether this is to make sure only that user edits their own profile
 or it is for secure financial transactions, identity, trust and
@@ -564,4 +579,4 @@ discussed is:&lt;/p&gt;
 article to show how the same theory behind authentication is important
 for the reverse process of a user verifying a website is who it claims
 to be, e.g. that you are looking at your bank's legitimate website and
-not an imitation set up to steal your account details.&lt;/p&gt;</summary><category term="authentication"></category><category term="authorisation"></category><category term="security"></category><category term="identity"></category></entry></feed>
+not an imitation set up to steal your account details.&lt;/p&gt;</content><category term="authentication"></category><category term="authorisation"></category><category term="security"></category><category term="identity"></category></entry></feed>
