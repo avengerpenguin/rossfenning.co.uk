@@ -68,6 +68,10 @@ body {
 }
 
 #sidebar li.adsense {
+    list-style-type: none;
+}
+
+#sidebar li.adsense {
     width: 160px;
     margin: 0 auto;
     margin-top: 2em;
