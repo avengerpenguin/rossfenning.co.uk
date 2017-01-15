@@ -77,6 +77,10 @@ body {
     margin-top: 2em;
 }
 
+div.badges {
+    text-align: center;
+}
+
 a, a:hover {
     color: inherit;
 }
