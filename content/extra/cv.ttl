@@ -5,6 +5,7 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
+
 <http://rossfenning.co.uk/cv/#cv> a cv:CV ;
 
     # Basic info first
@@ -295,3 +296,10 @@ _:bradford    a          cv:EducationalOrg ;
 _:cambridge   a          cv:EducationalOrg ;
               cv:Name    "University of Cambridge" ;
               owl:sameAs <http://www.dbpedialite.org/things/25978572#id> .
+
+# Ideally this would live in some schema somewhere, but for now we
+# need to declare some thing as having unique values to save faffing
+# with iterables in any templates.
+cv:startDate a owl:FunctionalProperty .
+cv:eduGradDate a owl:FunctionalProperty .
+

@@ -25,7 +25,7 @@ typeof: CV
 {% for work_history in cv.cv_hasWorkHistory | sort(attribute='cv_startDate', reverse=True) %}
 {% if work_history.cv_employedIn %}{% if work_history.cv_employedIn.any().cv_Name %}
 <div typeof="WorkHistory" property="hasWorkHistory" markdown="1">
-### {% if work_history.cv_jobTitle %}<span property="jobTitle">{{ work_history.cv_jobTitle|first }}</span> at {% endif %}<span typeof="Company" property="employedIn"><span property="Name">{{ work_history.cv_employedIn.any().cv_Name.any() }}</span></span>{% if work_history.cv_startDate %}: <span property="startDate">{{ work_history.cv_startDate.any() }}</span> to {% if work_history.cv_endDate %}<span property="endDate">{{ work_history.cv_endDate.any() }}</span>{% else %}present{% endif %}{% endif %}
+### {% if work_history.cv_jobTitle %}<span property="jobTitle">{{ work_history.cv_jobTitle|first }}</span> at {% endif %}<span typeof="Company" property="employedIn"><span property="Name">{{ work_history.cv_employedIn.any().cv_Name.any() }}</span></span>{% if work_history.cv_startDate %}: <span property="startDate">{{ work_history.cv_startDate }}</span> to {% if work_history.cv_endDate %}<span property="endDate">{{ work_history.cv_endDate.any() }}</span>{% else %}present{% endif %}{% endif %}
 
 {% if work_history.cv_jobDescription %}{{ work_history.cv_jobDescription.any() }}{% endif %}
 </div>
@@ -39,7 +39,7 @@ typeof: CV
 
 <div typeof="Education" property="hasEducation" markdown="1">
 
-### <span property="eduMajor">{{ education.cv_eduMajor.any() }}</span> at <span typeof="EducationalOrg" property="studiedIn"><span property="Name">{{ education.cv_studiedIn.any().cv_Name.any() }}</span></span> ({% if education.cv_eduGradDate %}<span property="eduGradDate">{{ education.cv_eduGradDate.any() }}</span>{% else %}Ongoing{% endif %})
+### <span property="eduMajor">{{ education.cv_eduMajor.any() }}</span> at <span typeof="EducationalOrg" property="studiedIn"><span property="Name">{{ education.cv_studiedIn.any().cv_Name.any() }}</span></span> ({% if education.cv_eduGradDate %}<span property="eduGradDate">{{ education.cv_eduGradDate }}</span>{% else %}Ongoing{% endif %})
 
 {% if education.cv_eduDescription %}<span property="eduDescription">{{ education.cv_eduDescription.any() }}</span>{% endif %}
 
@@ -65,7 +65,7 @@ previous year (1999).
 ## Interests
 
 -   Natural language processing, artificial intelligence, linguistics
-    and logic
+	and logic
 -   Folk and traditional music including playing bodhrán
 -   Exploring new music as well as writing/composition
 -   Modern foreign languages

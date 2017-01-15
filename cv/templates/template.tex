@@ -35,7 +35,7 @@
 
 ((* for work_history in cv.cv_hasWorkHistory | sort(attribute='cv_startDate', reverse=True) *))
 ((* if work_history.cv_employedIn *))((* if work_history.cv_employedIn.any().cv_Name *))
-\subsection*{((* if work_history.cv_jobTitle *))((( work_history.cv_jobTitle|first ))) at ((* endif *))((( work_history.cv_employedIn.any().cv_Name.any() )))((* if work_history.cv_startDate *)): ((( work_history.cv_startDate.any() ))) to ((* if work_history.cv_endDate *))((( work_history.cv_endDate.any() )))((* else *))present((* endif *))((* endif *))}
+\subsection*{((* if work_history.cv_jobTitle *))((( work_history.cv_jobTitle|first ))) at ((* endif *))((( work_history.cv_employedIn.any().cv_Name.any() )))((* if work_history.cv_startDate *)): ((( work_history.cv_startDate ))) to ((* if work_history.cv_endDate *))((( work_history.cv_endDate.any() )))((* else *))present((* endif *))((* endif *))}
 
 ((* if work_history.cv_jobDescription *))((( work_history.cv_jobDescription.any() )))((* endif *))
 ((* endif *))((* endif *))
@@ -46,7 +46,7 @@
 
 ((* for education in cv.cv_hasEducation | sort(attribute='cv_eduGradDate', reverse=True) *))
 
-\subsection*{((( education.cv_eduMajor.any() ))) at ((( education.cv_studiedIn.any().cv_Name.any() ))) [((* if education.cv_eduGradDate *))((( education.cv_eduGradDate.any() )))((* else *))Ongoing((* endif *))]}
+\subsection*{((( education.cv_eduMajor.any() ))) at ((( education.cv_studiedIn.any().cv_Name.any() ))) [((* if education.cv_eduGradDate *))((( education.cv_eduGradDate )))((* else *))Ongoing((* endif *))]}
 
 ((* if education.cv_eduDescription *))((( education.cv_eduDescription.any() )))((* endif *))
 

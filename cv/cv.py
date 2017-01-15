@@ -57,3 +57,7 @@ def render(_sender):
 
 def register():
     signals.initialized.connect(render)
+
+
+if __name__  == '__main__':
+    render(None)
