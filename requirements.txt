@@ -15,4 +15,4 @@ python-dateutil==2.6.0
 pytz==2017.2
 rdflib==4.2.2
 six==1.10.0
-Unidecode==0.04.20
+Unidecode==0.04.21
