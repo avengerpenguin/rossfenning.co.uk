@@ -1,22 +1,26 @@
 {% extends "base.html" %}
-{% block content %}
-    {% if articles %}
-        {% for article in (articles_page.object_list if articles_page else articles) %}
-            <article>
-                <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
-                    <div class="well well-sm">
-                        {% include "includes/article_info.html" %}
-                    </div>
-                {% endif %}
-                <div class="summary">{{ article.summary }}
-                    {% include 'includes/comment_count.html' %}
-                    <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
-                </div>
-            </article>
-            <hr/>
-        {% endfor %}
-    {% endif %}
 
-    {% include 'includes/pagination.html' %}
+{% block title %}
+Home | {{ SITENAME }}
+{% endblock title %}
+
+{% block content %}
+<section id="content">
+
+<ol id="post-list">
+{% for article in articles_page.object_list %}
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                <div class="entry-content">
+                    {{ article.summary }}
+                    <p><a href="{{ SITEURL }}/{{ article.slug }}" rel="bookmark" title="Read {{ article.title|striptags }}">Read more</a></p>
+                </div>
+        </article></li>
+{% endfor %}
+</ol><!-- /#posts-list -->
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
 {% endblock content %}
+

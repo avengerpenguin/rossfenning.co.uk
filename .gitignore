@@ -1,8 +1,7 @@
-/output
 *.pyc
+*.log
 *~
-
-content/pages/cv.md
-/cache
-/.idea
-/venv
+.directory
+.idea
+.project
+.pydevproject

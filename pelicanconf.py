@@ -30,17 +30,19 @@ DEFAULT_PAGINATION = 10
 
 THEME = './theme'
 
-GOOGLE_AD_CLIENT = 'pub-7863038150136152'
-GOOGLE_AD_SLOT = '2849293582'
-GOOGLE_AD_WIDTH = 160
-GOOGLE_AD_HEIGHT = 600
-
 STATIC_PATHS = ['images', 'extra/CNAME', 'papers']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {'path': 'CNAME'},
     }
 
-PLUGINS = ['cv.cv']
+PLUGINS = ['cv.cv', 'plugins.assets', 'plugins.sitemap', 'plugins.summary', 'plugins.post_stats']
 
 PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}/index.html'
+
+MENUITEMS = (
+    ('Home', '/'),
+    ('CV', '/cv'),
+    ('Papers', '/papers'),
+    ('Blog', 'http://avengerpenguin.com/'),
+)

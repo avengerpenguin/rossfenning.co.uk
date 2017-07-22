@@ -33,7 +33,7 @@ In June 2014, I published and presented a paper at the CAiSE 2014 conference in
 My responsibilities in the BBC have been within the main BBC Homepage,
         Search and the global navigation across the website. This has
     allowed me to work with the languages Java, PHP, Ruby, Python and
-    JavaScript (including Node.js).''';
+    JavaScript (including Node.js) in an enterprise setting.''';
 
     # Skills
     cv:hasSkill [ cv:skillName "Java"             ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],

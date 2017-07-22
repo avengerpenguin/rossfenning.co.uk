@@ -1,48 +1,52 @@
-{% extends "base.html" %}
-{% block title %}{{ article.title|striptags }} - {{ SITENAME }}{% endblock %}
 
-{% block breadcrumbs %}
-    {% if DISPLAY_BREADCRUMBS %}
-        {% if DISPLAY_CATEGORY_IN_BREADCRUMBS %}
-            <ol class="breadcrumb">
-                <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
-                <li><a href="{{ SITEURL }}/{{ article.category.url }}" title="{{ article.category }}">{{ article.category }}</a></li>
-                <li class="active">{{ article.title }}</li>
-            </ol>
-        {% else %}
-            <ol class="breadcrumb">
-                <li><a href="{{ SITEURL }}" title="{{ SITENAME }}"><i class="fa fa-home fa-lg"></i></a></li>
-                <li class="active">{{ article.title }}</li>
-            </ol>
-        {% endif %}
-    {% endif %}
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} | {{ SITENAME }}{%endblock%}
+
+{% block head %}
+  {{ super() }}
+  {% for keyword in article.keywords %}
+    <meta name="keywords" content="{{keyword}}" />
+  {% endfor %}
+
+  {% for description in article.description %}
+    <meta name="description" content="{{description}}" />
+  {% endfor %}
+
+  {% for tag in article.tags %}
+    <meta name="tags" content="{{tag}}" />
+  {% endfor %}
+
 {% endblock %}
 
 {% block content %}
-    <section id="content">
-        <article>
-            <header class="page-header">
-                <h1>
-                    <a href="{{ SITEURL }}/{{ article.url }}"
-                       rel="bookmark"
-                       title="Permalink to {{ article.title|striptags }}">
-                        {{ article.title }}
-                    </a>
-                </h1>
-            </header>
-            <div class="entry-content">
-                <div class="panel">
-                    <div class="panel-body">
-                        {% include "includes/article_info.html" %}
-                    </div>
-                </div>
-                {{ article.content }}
-            </div>
-            <!-- /.entry-content -->
-            {% include 'includes/related-posts.html' %}
-            {% include 'includes/addthis.html' %}
-            {% include 'includes/comments.html' %}
-        </article>
-    </section>
+<section id="content" class="body">
+  <header>
+    <h1 class="entry-title">{{ article.title }}</h1>
+ {% import 'translations.html' as translations with context %}
+ {{ translations.translations_for(article) }}
+      <p>
+          Back to
+          <a href="{{ SITEURL }}/{{article.category.url}}">
+              {{article.category}}
+          </a>
+      </p>
+  </header>
+  <div class="entry-content">
+    {{ article.content }}
+  </div><!-- /.entry-content -->
 
+    {% if SHOW_STATS %}
+    <hr>
+    <h3>Article Stats</h3>
+    <p>{{ article.stats['wc'] }} words and {{ article.stats['read_mins'] }} min read</p>
+    <ul>
+        <li>Flesch-kincaid Index/ Reading Ease: {{ article.stats['fi'] }}</li>
+        <li>Flesch-kincaid Grade Level: {{ article.stats['fk'] }}</li>
+    </ul>
+    {% endif %}
+
+  
+</section>
 {% endblock %}
+
