@@ -1,5 +1,5 @@
 blinker==1.4
-docutils==0.13.1
+docutils==0.14
 feedgenerator==1.9
 html5lib==0.999999999
 isodate==0.5.4
