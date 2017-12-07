@@ -1,7 +1,7 @@
 blinker==1.4
 docutils==0.14
 feedgenerator==1.9
-html5lib==1.0
+html5lib==1.0.1
 isodate==0.6.0
 Jinja2==2.10
 laconia==0.3.0
