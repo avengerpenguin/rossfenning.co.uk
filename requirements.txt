@@ -10,7 +10,7 @@ MarkupSafe==1.0
 microdata==0.6.1
 pelican==3.7.1
 Pygments==2.2.0
-pyparsing==2.2.0
+pyparsing==2.2.1
 python-dateutil==2.7.3
 pytz==2018.5
 rdflib==4.2.2
