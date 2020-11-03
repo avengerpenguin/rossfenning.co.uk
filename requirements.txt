@@ -8,11 +8,11 @@ laconia==0.3.0
 Markdown==3.3.3
 MarkupSafe==1.1.1
 microdata==0.7.1
-pelican==4.5.0
+pelican==4.5.1
 Pygments==2.7.2
 pyparsing==2.4.7
 python-dateutil==2.8.1
-pytz==2020.1
+pytz==2020.4
 rdflib==5.0.0
 six==1.15.0
 Unidecode==1.1.1
