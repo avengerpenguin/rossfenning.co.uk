@@ -2,7 +2,6 @@ from pelican import signals
 from laconia import ThingFactory
 from rdflib import Graph, RDFS, OWL, Namespace, RDF
 from jinja2 import Environment, PackageLoader
-from jinja2 import tests
 
 
 env_md = Environment(loader=PackageLoader('cv', 'templates'))

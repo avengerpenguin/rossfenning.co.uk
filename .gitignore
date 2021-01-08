@@ -1,7 +1,11 @@
-*.pyc
-*.log
-*~
-.directory
+output
+__pycache__
 .idea
-.project
-.pydevproject
+
+content/extra/cv.aux
+content/extra/cv.log
+content/extra/cv.pdf
+content/extra/cv.tex
+content/pages/cv.md
+
+dist
