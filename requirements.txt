@@ -26,5 +26,5 @@ sh==1.14.1
 six==1.15.0
 tornado==6.1
 Unidecode==1.1.2
-voltaire==0.7.0
+voltaire==0.8.1
 webassets==2.0
