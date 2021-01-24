@@ -1,5 +1,5 @@
 blinker==1.4
-cachetools==4.2.0
+cachetools==4.2.1
 cssmin==0.2.0
 docutils==0.16
 feedgenerator==1.9.1
