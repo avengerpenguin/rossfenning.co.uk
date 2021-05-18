@@ -11,7 +11,7 @@ laconia==0.5.7
 livereload==2.6.3
 lxml==4.6.3
 Markdown==3.3.4
-MarkupSafe==2.0.0
+MarkupSafe==2.0.1
 pelican==4.6.0
 pelican-webassets==2.0.0
 Pygments==2.9.0
