@@ -9,7 +9,7 @@ isodate==0.6.0
 Jinja2==3.0.1
 laconia==0.5.7
 livereload==2.6.3
-lxml==4.6.3
+lxml==4.6.5
 Markdown==3.3.4
 MarkupSafe==2.0.1
 pelican==4.6.0
