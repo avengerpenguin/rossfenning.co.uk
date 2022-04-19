@@ -11,22 +11,25 @@
     # Basic info first
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
-    cv:cvDescription """I am a principal software engineer with a holistic
-approach to DevOps, Agile and software delivery.
-This includes both building software and the human side of how to get teams to
-ship code quickly. In my current role, I focus mainly
-on technical leadership, disruption and getting the best out of engineers in
-combination with optimising our deployment pipelines.
+    cv:cvDescription """I am an engineer, consultant and innovator with a holistic
+approach to Systems, DevOps and software delivery.
+This includes all of software/deployment architecture, continuous delivery automation,
+centralising duplicated effort/waste and the human side of how teams ship changes
+safely at pace.
 
-More recently, I have been working in partnership with data analysts and data
-scientists to improve the analytics feedback loops for the BBC online audience
-and applying data modelling and prototyping techniques to this problem. I
-therefore have some familiarity with data science and machine learning tools
-such as Jupyter, numpy and scikit-learn.
+I am looking to return to contract working (outside IR35) after 10 years
+progressing to a Principal Software Engineer at the BBC. My day rate
+expectations are currently between £500 and £700.
 
-In my personal time I play music (bodhrán and tin whistle), work a little
-on personal, open source projects and study philosophy, languages, computer
-science and other various fields of interest.
+Areas I've covered as part of working on BBC online have included analytics,
+microservices for distributed teams and centralised delivery automation. I've
+also been a driver of reducing overheads and undifferentiated heavy lifting in
+how we build, test and deliver our applications.
+
+While my role title is currently principal software engineer, in practice I work
+at a consultant or senior principal capacity with a focus on communicating
+domain knowledge, proposing opportunities for broad improvements and ensuring
+engineering teams are able to do their work with minimal overheads or friction.
 """;
 
     # Skills
@@ -49,20 +52,20 @@ science and other various fields of interest.
                 [ cv:skillName "Red Hat"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins Pipelines"        ; cv:skillLevel 5 ],
+                [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 5 ],
+                [ cv:skillName "Node.js"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Java"                     ; cv:skillLevel 4 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
                 [ cv:skillName "Gradle"                   ; cv:skillLevel 4 ],
-                [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "Spring Boot"              ; cv:skillLevel 4 ],
                 [ cv:skillName "JAX-RS"                   ; cv:skillLevel 4 ],
-                [ cv:skillName "Travis CI"                ; cv:skillLevel 4 ],
-                [ cv:skillName "Jersey"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Eclipse Jersey"           ; cv:skillLevel 4 ],
                 [ cv:skillName "Scrum"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "git"                      ; cv:skillLevel 4 ],
                 [ cv:skillName "Subversion"               ; cv:skillLevel 4 ],
                 [ cv:skillName "LaTeX"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU Make"                 ; cv:skillLevel 4 ],
-                [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU/Linux"                ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"                     ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"            ; cv:skillLevel 4 ],
@@ -70,6 +73,7 @@ science and other various fields of interest.
                 [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
                 [ cv:skillName "MySQL"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Ruby"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Selenium"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Django"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Flask"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Git"                      ; cv:skillLevel 4 ],
@@ -81,9 +85,9 @@ science and other various fields of interest.
                 [ cv:skillName "Redis"                    ; cv:skillLevel 3 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
-                [ cv:skillName "scikit-learn"             ; cv:skillLevel 3 ],
                 [ cv:skillName "Groovy"                   ; cv:skillLevel 3 ],
-                [ cv:skillName "Prolog"                   ; cv:skillLevel 2 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
+                [ cv:skillName "Typescript"               ; cv:skillLevel 5 ],
+                [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "MongoDB"                  ; cv:skillLevel 2 ],
@@ -96,22 +100,19 @@ science and other various fields of interest.
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
         cv:startDate "2015-06" ;
+        cv:endDate "2022-04" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
-My current role is one of two Principal Software Engineers supporting four teams
-within the Search and Navigation department (renamed from previous
-name of "Content Discovery") within BBC Design and Engineering.
-
-My role is a balance between stepping back from implementations
--- giving only support and domain knowledge to other engineers where needed --
-and also doing more "hands on" technical work when it comes to prototyping
+Role in the Search and Navigation team balancing giving support and domain
+knowledge to other engineers where needed
+and doing more "hands on" technical work when it comes to prototyping
 or in the DevOps and deployment automation domain.
 
-I have also been involved in architectural
-design and data modelling for improving our pan-website analytics and work to
-improve our tracking beyond simple impressions and clicks, e.g. user engagement
-tracking and audience demographics.
+I have also been involved in architectural design and data modelling for
+improving our pan-website analytics and work to improve our tracking beyond
+simple impressions and clicks, e.g. user engagement tracking and audience
+demographics.
 """;
     ],
     [
@@ -121,18 +122,11 @@ tracking and audience demographics.
         cv:endDate "2015-06" ;
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Senior Software Engineer" ;
-        cv:jobDescription """
-I worked as a senior engineer on the main BBC website
-search functionality as part of the Content Discovery team within BBC Future
-Media.
-
-This was a major Enterprise Integration project, but my drive was to lead on
-introducing principles from REST architectures
-and Linked Data to create long-running and evolvable service applications
-with minimal bespoke integration code.
-Technologies were primarily Java, JAX-RS (Jersey), Apache Camel and ActiveMQ.
-Ruby and Cucumber was used for component tests.
-""";
+        cv:jobDescription """Enterprise Integration project migrating
+        the BBC Search product onto Java microservices using a mix of REST (JAX-RS, Jersey)
+        and message-driven architecture (Apache Camel and ActiveMQ). I worked
+        on migrating some services to Spring Boot on AWS later on.
+        Services were defined via formal BBC processes involving Cucumber and Ruby.""";
     ],
     [
         a cv:WorkHistory ;
@@ -140,13 +134,9 @@ Ruby and Cucumber was used for component tests.
         cv:startDate "2010-12" ;
         cv:endDate "2012-02" ;
         cv:jobTitle "Contract Software Engineer" ;
-        cv:jobDescription """I worked as a contract software engineer for the BBC Future Media division
-in the BBC Wales/Cymru offices as a
-new BBC Home Page. My role was a working as a
-Java backend service developer to create data feeds for part
-of the new home page, but also contribute on PHP, Javascript, HTML
-development and any other tasks as needed. Later, I worked on the location search used by the BBC Weather website. This
-involved both Java services and the use of Apache Solr.""" ;
+        cv:jobDescription """The role involved Java business layer services to provide data feeds for
+the Home page and also contributions to the PHP/JS front end presentation layer. Also worked on the location search behind BBC Weather using Apache Solr and
+building Java REST services around it.""" ;
     ],
     [
         a cv:WorkHistory ;
@@ -154,16 +144,10 @@ involved both Java services and the use of Apache Solr.""" ;
         cv:startDate "2007-04" ;
         cv:endDate "2010-06" ;
         cv:jobTitle "Systems Developer" ;
-        cv:jobDescription """Systems Developer in an IT department that supported
-the teaching and service departments across the university. The systems development team sat
-within the infrastructure team to develop solutions to needs within and
-outwith the department and support said in-house projects. Most projects
-were Java-based web applications.
-
-Skills I developed in the role include setting up
-production Apache Tomcat servers, installing and basic amounts of work
-with Oracle, interacting programmatically with MS Active Directory over
-LDAP and developing web applications with the Apache Struts framework.""" ;
+        cv:jobDescription """Systems Developer in the university IT department,
+        working on in-house solutions. Most projects were Java web apps
+        on Apache Tomcat, connecting with Oracle and Active Directory,
+        using Apache Struts framework.""" ;
     ],
     [
         a cv:WorkHistory ;

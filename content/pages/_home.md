@@ -18,6 +18,8 @@ Here are some things I make:
 * [Get Ahead Book Club](http://getahead.club/)
 * [Tuff Spot Activities](http://tuffspotactivities.com/)
 
+See [Github Projects](/projects/) for a full list of code projects.
+
 <script type="application/ld+json">
 {
   "@context": {

@@ -50,7 +50,7 @@ def render(_sender):
 
     jsonld_data = jsonld.compact(
         jsonld.frame(
-            json.loads(g.serialize(format="json-ld",).decode("utf8")),
+            json.loads(g.serialize(format="json-ld",)),
             {"@type": "http://rdfs.org/resume-rdf/cv.rdfs#CV"},
         ),
         {alias: url for alias, url in g.namespaces()},

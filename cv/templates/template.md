@@ -13,7 +13,7 @@ typeof: CV
 
 ## Skills
 
-{% for level in range(5, 0, -1) %}
+{% for level in range(5, 1, -1) %}
 ### {{ skill_levels[level] }}
 
 <span typeof="Skill" property="hasSkill"><span property="skillName">{{ skills[level]|map(attribute='cv_skillName')|map('first')|sort|join('</span></span>, <span typeof="Skill" property="hasSkill"><span property="skillName">') }}</span></span>
@@ -60,13 +60,3 @@ grade 3.
 Attained A in English Language. Also obtained an A grade in an
 Additional Mathematics qualification having completed the GCSE the
 previous year (1999).
-
-
-## Interests
-
--   Natural language processing, artificial intelligence, linguistics
-	and logic
--   Folk and traditional music including playing bodhrán
--   Exploring new music as well as writing/composition
--   Modern foreign languages
--   Supporting human rights and environmental work
