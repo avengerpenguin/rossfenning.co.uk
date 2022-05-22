@@ -31,11 +31,10 @@ See [Github Projects](/projects/) for a full list of code projects.
   "@type":"foaf:Person",
   "owl:sameAs": "http://id.crossref.org/contributor/ross-fenning-16fs0eva8w8vu",
   "foaf:name": "Ross Fenning",
-  "foaf:homepage": "http://rossfenning.co.uk/",
+  "foaf:homepage": "https://rossfenning.co.uk/",
   "dcterms:creator": [
-    {"@id": "http://avengerpenguin.com/"},
-    {"@id": "http://traditionalmead.uk/"},
-    {"@id": "http://getahead.club/"},
+    {"@id": "https://avengerpenguin.com/"},
+    {"@id": "https://traditionalmead.uk/"},
     {
       "@id": "http://dx.doi.org/10.1007/978-3-662-43745-2_33",
       "owl:sameAs": {

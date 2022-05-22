@@ -1,11 +1,10 @@
 output
 __pycache__
 .idea
-
 content/extra/cv.aux
 content/extra/cv.log
 content/extra/cv.pdf
 content/extra/cv.tex
 content/pages/cv.md
-
+.direnv
 dist
