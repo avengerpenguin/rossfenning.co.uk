@@ -15,8 +15,6 @@ Here are some things I make:
 
 * [Avenger Penguin (blog)](http://avengerpenguin.com/)
 * [Traditional Mead UK](http://traditionalmead.uk/)
-* [Get Ahead Book Club](http://getahead.club/)
-* [Tuff Spot Activities](http://tuffspotactivities.com/)
 
 See [Github Projects](/projects/) for a full list of code projects.
 
