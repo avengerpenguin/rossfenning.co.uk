@@ -1,7 +1,6 @@
 \documentclass[10pt]{article}
 
 \usepackage{fullpage}
-\usepackage{svn}
 \usepackage{fontspec}
 
 %\setmainfont{FiraSansRegular}
@@ -17,8 +16,10 @@
   e-mail: cv@rossfenning.co.uk
 }
 
-\SVNdate $Date$
+\date{\today\footnote{Latest version always available at ((( cv.cv_aboutPerson.any().foaf_homepage.any() )))}}
 \maketitle
+
+\vspace{-0.5cm}
 
 \hrulefill
 
@@ -33,6 +34,7 @@
 ((( skills[level]|map(attribute='cv_skillName')|map('first')|sort|join(', ') )))
 ((* endfor *))
 
+\vfill
 
 \section*{Work Experience}
 

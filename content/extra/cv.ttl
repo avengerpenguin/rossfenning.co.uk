@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 
 <http://rossfenning.co.uk/cv/#cv> a cv:CV ;
@@ -11,14 +12,15 @@
     # Basic info first
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
-    cv:cvDescription """I am an engineer, consultant and innovator with a holistic
-approach to Systems, DevOps and software delivery.
-This includes all of software/deployment architecture, continuous delivery automation,
+    cv:cvDescription """
+I am an engineer, consultant and innovator with a holistic
+approach to Systems, DevOps and software development and delivery.
+This includes all of software deployment, architecture, continuous delivery automation,
 centralising duplicated effort/waste and the human side of how teams ship changes
 safely at pace.
 
 I am looking to return to contract working (outside IR35) after 10 years
-progressing to a Principal Software Engineer at the BBC. My day rate
+progressing to Principal Software Engineer at the BBC. My day rate
 expectations are currently between £500 and £700.
 
 Areas I've covered as part of working on BBC online have included analytics,
@@ -83,12 +85,12 @@ engineering teams are able to do their work with minimal overheads or friction.
                 [ cv:skillName "SPARQL"                   ; cv:skillLevel 3 ],
                 [ cv:skillName "Jupyter Notebook"         ; cv:skillLevel 3 ],
                 [ cv:skillName "NumPy"                    ; cv:skillLevel 3 ],
-                [ cv:skillName "gulp"                     ; cv:skillLevel 3 ],
                 [ cv:skillName "Redis"                    ; cv:skillLevel 3 ],
+                [ cv:skillName "FastAPI"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Groovy"                   ; cv:skillLevel 3 ],
-                [ cv:skillName "Typescript"               ; cv:skillLevel 5 ],
+                [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "Google BigQuery"          ; cv:skillLevel 4 ],
                 [ cv:skillName "GCP"                      ; cv:skillLevel 3 ],
@@ -104,7 +106,7 @@ engineering teams are able to do their work with minimal overheads or friction.
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
         cv:startDate "2015-06" ;
-        cv:endDate "2022-04" ;
+        cv:endDate "2022-07" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
@@ -208,6 +210,7 @@ run in conjunction with the BBC.""" ;
     cv:hasNationality "British" ;
     cv:hasCitizenship <http://www.daml.org/2001/09/countries/countries.daml#GB> ;
     owl:sameAs <http://id.crossref.org/contributor/ross-fenning-16fs0eva8w8vu> ;
+    foaf:homepage <https://rossfenning.co.uk/> ;
     dcterms:creator <http://dx.doi.org/10.1007/978-3-662-43745-2_33> .
 
 # Just to be clear that these are interchangeable since one is used above
