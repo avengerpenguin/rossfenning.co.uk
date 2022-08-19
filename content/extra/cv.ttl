@@ -20,18 +20,13 @@ centralising duplicated effort/waste and the human side of how teams ship change
 safely at pace.
 
 I am looking to return to contract working (outside IR35) after 10 years
-progressing to Principal Software Engineer at the BBC. My day rate
+progressing to and beyond Principal Software Engineer at the BBC. My day rate
 expectations are currently between £500 and £700.
 
 Areas I've covered as part of working on BBC online have included analytics,
 microservices for distributed teams and centralised delivery automation. I've
 also been a driver of reducing overheads and undifferentiated heavy lifting in
 how we build, test and deliver our applications.
-
-While my role title is currently principal software engineer, in practice I work
-at a consultant or senior principal capacity with a focus on communicating
-domain knowledge, proposing opportunities for broad improvements and ensuring
-engineering teams are able to do their work with minimal overheads or friction.
 """;
 
     # Skills
@@ -55,7 +50,7 @@ engineering teams are able to do their work with minimal overheads or friction.
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins Pipelines"        ; cv:skillLevel 5 ],
                 [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 5 ],
-                [ cv:skillName "Node.js"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Java"                     ; cv:skillLevel 4 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
                 [ cv:skillName "Gradle"                   ; cv:skillLevel 4 ],
@@ -106,7 +101,7 @@ engineering teams are able to do their work with minimal overheads or friction.
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
         cv:startDate "2015-06" ;
-        cv:endDate "2022-07" ;
+        cv:endDate "2022-08" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
