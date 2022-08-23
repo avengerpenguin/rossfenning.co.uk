@@ -13,7 +13,7 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-I am an engineer, consultant and innovator with a holistic
+I am a systems engineer, consultant and innovator with a holistic
 approach to Systems, DevOps and software development and delivery.
 This includes all of software deployment, architecture, continuous delivery automation,
 centralising duplicated effort/waste and the human side of how teams ship changes
@@ -44,6 +44,7 @@ how we build, test and deliver our applications.
                 [ cv:skillName "Kanban"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Python"                   ; cv:skillLevel 5 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
                 [ cv:skillName "UML"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "Systems"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "AWS"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "CentOS"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Red Hat"                  ; cv:skillLevel 5 ],
