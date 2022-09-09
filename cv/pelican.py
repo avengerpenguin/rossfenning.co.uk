@@ -1,12 +1,11 @@
 import json
 
-from pelican import signals
-from laconia import ThingFactory
-from rdflib import Graph, RDFS, OWL, Namespace, RDF
 from jinja2 import Environment, PackageLoader
-from jinja2 import tests
-from sh import xelatex
+from laconia import ThingFactory
+from pelican import signals
 from pyld import jsonld
+from rdflib import Graph, Namespace
+from sh import xelatex
 
 env_md = Environment(loader=PackageLoader("cv", "templates"))
 template_md = env_md.get_template("template.md")
@@ -32,11 +31,7 @@ def render(_sender):
     cv = ThingFactory(g)("http://rossfenning.co.uk/cv/#cv")
 
     skills = {
-        level: [
-            skill
-            for skill in cv.cv_hasSkill
-            if skill.cv_skillLevel.any() == level
-        ]
+        level: [skill for skill in cv.cv_hasSkill if skill.cv_skillLevel.any() == level]
         for level in range(0, 6)
     }
 
@@ -50,7 +45,11 @@ def render(_sender):
 
     jsonld_data = jsonld.compact(
         jsonld.frame(
-            json.loads(g.serialize(format="json-ld",)),
+            json.loads(
+                g.serialize(
+                    format="json-ld",
+                )
+            ),
             {"@type": "http://rdfs.org/resume-rdf/cv.rdfs#CV"},
         ),
         {alias: url for alias, url in g.namespaces()},
@@ -66,9 +65,7 @@ def render(_sender):
     with open("content/pages/cv.md", "w") as cv_out:
         cv_out.write(out)
 
-    out = template_latex.render(
-        cv=cv, skills=skills, skill_levels=skill_levels
-    )
+    out = template_latex.render(cv=cv, skills=skills, skill_levels=skill_levels)
 
     # TODO: make configurable
     with open("content/extra/cv.tex", "w") as cv_out:

@@ -9,14 +9,14 @@ $blue:  #6F7293;
 body {
   color: $black;
   font-family: 'Roboto Slab', serif;
-  
+
   header {
     background-color: $black;
     color: $cream;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     padding: 2rem;
-    
+
     h1 {
       &:before {
         content: ">";
@@ -35,7 +35,7 @@ body {
       }
     }
   }
-  
+
   nav {
     max-width: 40rem;
     margin: 0 auto;

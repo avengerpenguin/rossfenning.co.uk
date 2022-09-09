@@ -1,5 +1,5 @@
 save_as: index.html
-url: 
+url:
 status: published
 Title: About Ross Fenning
 menu_title: Home
