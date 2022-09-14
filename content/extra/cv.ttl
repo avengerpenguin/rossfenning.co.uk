@@ -26,9 +26,11 @@ engineering roles with day rate between £500 and £700 outside IR35. For inside
 IR35, I would expect day rates towards the higher end of that range.
 
 Areas I've covered as part of working on BBC online have included analytics,
-microservices for distributed teams and centralised delivery automation. I've
-also been a driver of reducing overheads and undifferentiated heavy lifting in
-how we build, test and deliver our applications.
+microservices for distributed teams and centralised delivery automation.
+I've also been a driver of reducing overheads and undifferentiated heavy
+lifting in how we build, test and deliver our applications.
+I prefer to remain able to touch on any technology stack, but my bias would
+be towards projects primarily using Python or Java.
 """;
 
     # Skills
@@ -48,6 +50,10 @@ how we build, test and deliver our applications.
                 [ cv:skillName "UML"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Systems"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "AWS"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "AWS Cloudformation"       ; cv:skillLevel 5 ],
+                [ cv:skillName "Infrastructure as Code"   ; cv:skillLevel 5 ],
+                [ cv:skillName "Troposphere"              ; cv:skillLevel 5 ],
+                [ cv:skillName "Terraform"                ; cv:skillLevel 3 ],
                 [ cv:skillName "CentOS"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Red Hat"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
@@ -64,6 +70,8 @@ how we build, test and deliver our applications.
                 [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Kubernetes"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Subversion"               ; cv:skillLevel 4 ],
+                [ cv:skillName "Serverless"               ; cv:skillLevel 4 ],
+                [ cv:skillName "AWS Lambda"               ; cv:skillLevel 4 ],
                 [ cv:skillName "LaTeX"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU Make"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU/Linux"                ; cv:skillLevel 4 ],
@@ -107,15 +115,22 @@ how we build, test and deliver our applications.
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
-Role in the Search and Navigation team balancing giving support and domain
-knowledge to other engineers where needed
+Role in the Search and Navigation team supporting other engineers where needed
 and doing more "hands on" technical work when it comes to prototyping
 or in the DevOps and deployment automation domain.
+
+The technical stacks these days are a mix of Java (JAX-RS, Spring Boot, Jersey),
+Node.js (Express, some Typescript) and Python (Flask dashboard, Django for
+internal tools).
+I have contributed significantly to all the Python-based
+automation for AWS and CI/CD where some Groovy is used for Jenkins pipelines
+as well.
 
 I have also been involved in architectural design and data modelling for
 improving our pan-website analytics and work to improve our tracking beyond
 simple impressions and clicks, e.g. user engagement tracking and audience
 demographics.
+
 """;
     ],
     [
