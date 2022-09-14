@@ -1,5 +1,6 @@
 import os
 import sys
+from pelicanconf import *
 
 sys.path.append(os.curdir)
 
