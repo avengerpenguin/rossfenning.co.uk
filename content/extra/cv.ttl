@@ -13,17 +13,18 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-I am a systems engineer, consultant and innovator with a holistic approach to
+
+
+
+I am a systems engineer, technical leader, consultant and innovator
+with a holistic approach to
 Systems, DevOps and software development and delivery.
 This includes all of software development, architecture, continuous delivery,
 reducing duplicated effort and the human side of how teams ship changes safely
 at pace.
 
-Currently, I am open to both permanent and contract roles that fit the
-principal, consultant or staff engineer level. Permanent salary expectations
-would be £100k to £150k. For contract roles, I'd be open to most software
-engineering roles with day rate between £500 and £700 outside IR35. For inside
-IR35, I would expect day rates towards the higher end of that range.
+Roles I would be looking for next would be Staff or Principal Engineer roles
+starting from £120,000 and upwards.
 
 Areas I've covered as part of working on BBC online have included analytics,
 microservices for distributed teams and centralised delivery automation.
@@ -114,7 +115,7 @@ be towards projects primarily using Python or Java.
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
         cv:startDate "2015-06" ;
-        cv:endDate "2022-09" ;
+        cv:endDate "2022-12" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
