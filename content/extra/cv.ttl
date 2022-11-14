@@ -13,9 +13,6 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-
-
-
 I am a systems engineer, technical leader, consultant and innovator
 with a holistic approach to
 Systems, DevOps and software development and delivery.

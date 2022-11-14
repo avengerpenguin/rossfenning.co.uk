@@ -7,4 +7,5 @@ content/extra/cv.pdf
 content/extra/cv.tex
 content/pages/cv.md
 .direnv
+venv
 dist
