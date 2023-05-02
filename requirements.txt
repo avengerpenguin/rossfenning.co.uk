@@ -12,7 +12,7 @@ feedgenerator==2.0.0
 frozendict==2.3.4
 ghp-import==2.1.0
 idna==3.3
-invoke==1.7.1
+invoke==2.1.1
 isodate==0.6.1
 Jinja2==3.1.2
 laconia==0.6.0
