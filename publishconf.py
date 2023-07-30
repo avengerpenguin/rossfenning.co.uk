@@ -1,6 +1,8 @@
 import os
 import sys
 
+from pelicanconf import *  # noqa
+
 sys.path.append(os.curdir)
 
 SITEURL = "https://rossfenning.co.uk"
