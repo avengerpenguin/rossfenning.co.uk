@@ -10,7 +10,7 @@ MENUITEMS_START = (
 
 PLUGINS += [
     "cv.pelican",
-    #"projects",
+    "projects",
 ]
 
 STATIC_PATHS = ["extra/cv.pdf", "extra/python.pdf", "papers"]
