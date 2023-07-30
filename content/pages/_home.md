@@ -13,8 +13,9 @@ Here are some things about me:
 
 Here are some things I make:
 
-* [Avenger Penguin (blog)](http://avengerpenguin.com/)
-* [Traditional Mead UK](http://traditionalmead.uk/)
+* [Avenger Penguin (blog)](https://avengerpenguin.com/)
+* [CodeSnips](https://codesnips.pro/)
+* [Traditional Mead UK](https://traditionalmead.uk/)
 
 See [Github Projects](/projects/) for a full list of code projects.
 

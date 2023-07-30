@@ -9,3 +9,4 @@ content/pages/cv.md
 .direnv
 venv
 dist
+node_modules
