@@ -127,19 +127,19 @@ heavy lifting in how we build, test and deliver sevices.
                     cv:jobDescription """
 
 Lead role on a team distributed between Manchester, UK and Kirkland,
-USA. Responsibilities include line management of UK-based engineers,
-planning out project implementations and mentoring/coaching practices
-around Continuous Delivery, DevOps and high quality engineering.
+USA. Responsibilities include line management of UK engineers,
+planning project implementations and mentoring practices around
+Continuous Delivery and DevOps.
 
 I have been tackling challenges with communications over an 8 hour
 time difference, setting technical direction/vision where needed and
 learning more around Kubernetes-based deployments and use of Terraform
 for infrastructure management.
 
-The business needs revolve around delivering data at high scale which
-has meant the use of Kafka, RabbitMQ and reactive patterns in the
-Quarkus framework. There are emerging efforts to do more with
-generative AI models, data lakes, AWS Athena.
+Key challenges are delivering data at high scale which has meant the use of
+Kafka, RabbitMQ and reactive patterns in the Quarkus framework. There
+are emerging efforts to do more with generative AI models, data lakes,
+AWS Athena.
 
 """;
     ],
@@ -155,16 +155,16 @@ generative AI models, data lakes, AWS Athena.
 Role in the Search and Navigation team supporting other engineers
 where needed and doing more "hands on" technical work when it comes to
 prototyping or in the DevOps and deployment automation domain.
-
-The technical stacks were a mix of Java (Spring Boot, Jersey), Node.js
-(Express, some Typescript) and Python (Flask dashboard, Django for
-internal tools). I contributed significantly to Python and
-Groovy-based automation for AWS and Jenkins CD pipelines.
-
 I was also involved in architectural design and data modelling for
 improving our pan-website analytics and work to improve our tracking
 beyond simple impressions and clicks, e.g. user engagement tracking
 and audience demographics.
+
+The technical stacks were a mix of Java (Spring Boot, Jersey), Node.js
+(Express) and Python (Flask dashboard, Django for internal tools). I
+contributed significantly to Python and Groovy-based automation for
+AWS and Jenkins CD pipelines.
+
 
 """;
     ],
