@@ -17,8 +17,6 @@ Here are some things I make:
 * [CodeSnips](https://codesnips.pro/)
 * [Traditional Mead UK](https://traditionalmead.uk/)
 
-See [Github Projects](/projects/) for a full list of code projects.
-
 <script type="application/ld+json">
 {
   "@context": {
