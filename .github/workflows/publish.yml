@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Install xelatex
-        run: sudo apt-get install -y texlive-xetex texlive-fonts-extra
+        run: sudo apt-get install -y texlive-xetex texlive-fonts-extra fonts-ebgaramond
       - uses: actions/checkout@v3
       - name: Set up Python
         uses: actions/setup-python@v4
