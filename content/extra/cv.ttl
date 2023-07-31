@@ -20,6 +20,8 @@ how teams ship changes safely at pace.
 
 Roles I would be looking for next would be Staff or Principal Engineer
 roles starting from £120,000 and upwards.
+I prefer to remain able to touch on any technology stack, but my bias
+would be towards projects primarily using Python or Java.
 
 I am currently working as a Lead Software Engineer at INRIX,
 overseeing the UK half of a team distributed between Manchester and
@@ -32,8 +34,6 @@ microservices for distributed teams and centralised delivery
 automation. I was driver of reducing overheads and undifferentiated
 heavy lifting in how we build, test and deliver sevices.
 
-I prefer to remain able to touch on any technology stack, but my bias
-would be towards projects primarily using Python or Java.
 
 """;
 
