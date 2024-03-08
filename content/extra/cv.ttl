@@ -121,6 +121,7 @@ heavy lifting in how we build, test and deliver sevices.
         a cv:WorkHistory ;
         cv:employedIn _:inrix ;
         cv:startDate "2022-12" ;
+        cv:endDate "2024-03" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
@@ -147,7 +148,7 @@ AWS Athena.
         cv:employedIn _:bbcnorth ;
         cv:startDate "2015-06" ;
         cv:endDate "2022-12" ;
-        cv:isCurrent cvbase:True ;
+        cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
 
