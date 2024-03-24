@@ -11,30 +11,15 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-
 I am a systems engineer, technical leader, consultant and innovator
 with a holistic approach to Systems, DevOps and software development
 and delivery. This includes software development itself, architecture,
 continuous delivery, reducing duplicated effort and the human side of
 how teams ship changes safely at pace.
 
-Roles I would be looking for next would be Staff or Principal Engineer
-roles starting from £120,000 and upwards. I prefer to remain able to
-touch on any technology stack, but my bias would be towards projects
-primarily using Python or Java.
-
-I am currently working as a Lead Software Engineer at INRIX,
-overseeing the UK half of a team distributed between Manchester and
-Kirkland. I am working on a number of projects using Java, Kafka and
-Kubernetes to continuously deliver services that provide traffic data
-at scale to customers.
-
-Areas I covered as part of working on BBC online included analytics,
-microservices for distributed teams and centralised delivery
-automation. I was driver of reducing overheads and undifferentiated
-heavy lifting in how we build, test and deliver sevices.
-
-
+Roles I would be looking for next would be Staff or Principal Engineer roles starting from £100,000 and upwards.
+My primary experience is in Java or Python ecosystems,
+but I also thrive in polyglot contexts and can be a generalist when needed.
 """;
 
     # Skills
@@ -45,27 +30,21 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "BDD"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Maven"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "REST"                     ; cv:skillLevel 5 ],
-                [ cv:skillName "Debian"                   ; cv:skillLevel 5 ],
+                [ cv:skillName "Debian/Ubuntu"            ; cv:skillLevel 5 ],
                 [ cv:skillName "Agile"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Continuous Delivery"      ; cv:skillLevel 5 ],
                 [ cv:skillName "Kanban"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Python"                   ; cv:skillLevel 5 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
                 [ cv:skillName "UML"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Systems"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Systems Thinking"         ; cv:skillLevel 5 ],
+                [ cv:skillName "Design Thinking"          ; cv:skillLevel 4 ],
                 [ cv:skillName "AWS"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "AWS Cloudformation"       ; cv:skillLevel 5 ],
-                [ cv:skillName "Infrastructure as Code"   ; cv:skillLevel 5 ],
                 [ cv:skillName "Troposphere"              ; cv:skillLevel 5 ],
                 [ cv:skillName "Terraform"                ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS EKS"                  ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS MSK"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "Kafka"                    ; cv:skillLevel 3 ],
-                [ cv:skillName "Kafka Connect"            ; cv:skillLevel 3 ],
-                [ cv:skillName "CentOS"                   ; cv:skillLevel 5 ],
-                [ cv:skillName "Red Hat"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Red Hat/CentOS"           ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
-                [ cv:skillName "Jenkins Pipelines"        ; cv:skillLevel 5 ],
                 [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 5 ],
                 [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
@@ -73,24 +52,21 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "Gradle"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Spring Boot"              ; cv:skillLevel 4 ],
                 [ cv:skillName "Quarkus"                  ; cv:skillLevel 4 ],
-                [ cv:skillName "Eclipse Microprofile"     ; cv:skillLevel 4 ],
                 [ cv:skillName "Scrum"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Kubernetes"               ; cv:skillLevel 4 ],
-                [ cv:skillName "Subversion"               ; cv:skillLevel 4 ],
                 [ cv:skillName "Serverless"               ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS Lambda"               ; cv:skillLevel 4 ],
                 [ cv:skillName "LaTeX"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU Make"                 ; cv:skillLevel 4 ],
-                [ cv:skillName "GNU/Linux"                ; cv:skillLevel 4 ],
+                [ cv:skillName "Linux"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"                     ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"            ; cv:skillLevel 4 ],
                 [ cv:skillName "OpenSearch"               ; cv:skillLevel 4 ],
                 [ cv:skillName "Cucumber"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
-                [ cv:skillName "MySQL"                    ; cv:skillLevel 4 ],
+                [ cv:skillName "PostGIS"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "SQL"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Ruby"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Ruby"                     ; cv:skillLevel 3 ],
                 [ cv:skillName "Selenium"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Django"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Flask"                    ; cv:skillLevel 4 ],
@@ -104,7 +80,6 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "Apache Spark"             ; cv:skillLevel 4 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
-                [ cv:skillName "Groovy"                   ; cv:skillLevel 3 ],
                 [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "GCP"                      ; cv:skillLevel 3 ],
@@ -121,11 +96,10 @@ heavy lifting in how we build, test and deliver sevices.
         a cv:WorkHistory ;
         cv:employedIn _:inrix ;
         cv:startDate "2022-12" ;
-        cv:endDate "2024-03" ;
+        cv:endDate "2024-04" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
-
 Lead role on a team distributed between Manchester, UK and Kirkland,
 USA. Responsibilities include line management of UK engineers,
 planning project implementations and mentoring practices around
@@ -140,7 +114,6 @@ Key challenges are delivering data at high scale which has meant the use of
 Kafka, RabbitMQ and reactive patterns in the Quarkus framework. There
 are emerging efforts to do more with generative AI models, data lakes,
 AWS Athena.
-
 """;
     ],
     [
@@ -151,7 +124,6 @@ AWS Athena.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
-
 Role in the Search and Navigation team supporting other engineers
 where needed and doing more "hands on" technical work when it comes to
 prototyping or in the DevOps and deployment automation domain.
@@ -164,8 +136,6 @@ The technical stacks were a mix of Java (Spring Boot, Jersey), Node.js
 (Express) and Python (Flask dashboard, Django for internal tools). I
 contributed significantly to Python and Groovy-based automation for
 AWS and Jenkins CD pipelines.
-
-
 """;
     ],
     [
@@ -242,8 +212,13 @@ web-based software product."""
         cv:eduStartDate "2012" ;
         cv:eduGradDate "2016" ;
         cv:studiedIn _:bradford ;
-        cv:eduDescription """Software Engineering and Internet Architecture. Awarded by Bradford, run
-in conjunction with the BBC.""" ;
+        cv:eduDescription """
+MSc in Software Engineering and Internet Architecture.
+
+Awarded by Bradford, run in conjunction with the BBC.
+
+Passed with distinction.
+        """ ;
     ],
     [
         a cv:Education ;
@@ -252,7 +227,11 @@ in conjunction with the BBC.""" ;
         cv:eduStartDate "2002" ;
         cv:eduGradDate "2005" ;
         cv:studiedIn _:cambridge ;
-        cv:eduDescription """MA (Hons) (Cantab) in Computer Science from the University of Cambridge.""" ;
+        cv:eduDescription """
+MA (Hons) (Cantab) in Computer Science.
+
+Passed an intermediate German via University of Cambridge Language Centre.
+""" ;
     ] .
 
 

@@ -5,7 +5,7 @@ from laconia import ThingFactory
 from pelican import signals
 from pyld import jsonld
 from rdflib import Graph, Namespace
-from sh import xelatex
+from sh import pdflatex
 
 env_md = Environment(loader=PackageLoader("cv", "templates"))
 template_md = env_md.get_template("template.md")
@@ -72,9 +72,8 @@ def render(_sender):
         cv_out.write(out)
 
     print(
-        xelatex(
+        pdflatex(
             "-halt-on-error",
-            "-interaction=batchmode",
             "cv.tex",
             _cwd="content/extra/",
         )
