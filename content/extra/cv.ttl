@@ -100,20 +100,17 @@ but I also thrive in polyglot contexts and can be a generalist when needed.
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
-Lead role on a team distributed between Manchester, UK and Kirkland,
-USA. Responsibilities include line management of UK engineers,
-planning project implementations and mentoring practices around
-Continuous Delivery and DevOps.
+Lead role across 2 teams distributed between Manchester, UK and Kirkland, USA (8 reports).
 
-I have been tackling challenges with communications over an 8 hour
-time difference, setting technical direction/vision where needed and
-learning more around Kubernetes-based deployments and use of Terraform
-for infrastructure management.
+Mentored on Continuous Delivery, infrastructure as code and DevOps.
 
-Key challenges are delivering data at high scale which has meant the use of
-Kafka, RabbitMQ and reactive patterns in the Quarkus framework. There
-are emerging efforts to do more with generative AI models, data lakes,
-AWS Athena.
+Built emergent platform on Kubernetes (AWS EKS), Quarkus, Terraform and Github Actions.
+
+Built event-driven traffic alerting using Kafka, RabbitMQ and Reactive Java (Quarkus).
+
+Build and led a Python project for testing deployed services and validating data output.
+
+Innovated Python project for applying BDD to an AI/LLM-based project.
 """;
     ],
     [
@@ -124,18 +121,20 @@ AWS Athena.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
-Role in the Search and Navigation team supporting other engineers
-where needed and doing more "hands on" technical work when it comes to
-prototyping or in the DevOps and deployment automation domain.
-I was also involved in architectural design and data modelling for
-improving our pan-website analytics and work to improve our tracking
-beyond simple impressions and clicks, e.g. user engagement tracking
-and audience demographics.
+Technical leader on highly-available internal Node.js and Spring Boot APIs used across the whole BBC website.
 
-The technical stacks were a mix of Java (Spring Boot, Jersey), Node.js
-(Express) and Python (Flask dashboard, Django for internal tools). I
-contributed significantly to Python and Groovy-based automation for
-AWS and Jenkins CD pipelines.
+Mentoring and leading on projects to promote knowledge sharing.
+
+Drove architecture and data modelling for a unified approach to analytics collection across the website.
+
+Developed lightweight feature flag mechanisms to allow instant rollout of visual changes while allowing stakeholders
+and designers to see changes privately in situ any time.
+
+Developed and then promoted a unified approach to CD (Jenkins) and deployments (AWS Cloudformation) across 30+ services between up to 4 teams.
+
+Led on Python tooling for automating unified deployments, common infrastructure patterns and testing.
+
+Developed and led on a federated network of dashboards in Python (Flask, aiohttp).
 """;
     ],
     [
@@ -146,13 +145,11 @@ AWS and Jenkins CD pipelines.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Senior Software Engineer" ;
                 cv:jobDescription """
+Developed event-driven data pipelines with Java (Jersey), Apache Camel and ActiveMQ.
 
-Enterprise Integration project migrating the BBC Search product onto
-Java microservices using a mix of REST (JAX-RS, Jersey) and
-message-driven architecture (Apache Camel and ActiveMQ). I worked on
-migrating some services to Spring Boot on AWS later on. Services were
-defined via formal BBC processes involving Cucumber and Ruby.
+Built tooling in Ruby and Cucumber to drive projects via BDD and TDD.
 
+Created a system similar to Docker Compose (but pre-dating that and using Tomcat as the container) for running services and dependencies during builds for full integration testing.
 """;
     ],
     [
@@ -162,11 +159,11 @@ defined via formal BBC processes involving Cucumber and Ruby.
         cv:endDate "2012-02" ;
         cv:jobTitle "Contract Software Engineer" ;
                 cv:jobDescription """
+Building data aggregation services in Java (Spring MVC)
 
-Building Java services feeding data to the Home page with some work
-PHP/JS front end contributions too. Also worked on the BBC Weather
-location using using Apache Solr and Java REST frameworks.
+Contributed to some front end in PHP and JS on the BBC Home page.
 
+Creating geospatial BBC Weather search using Solr and PostGIS
 """ ;
     ],
     [
@@ -175,8 +172,9 @@ location using using Apache Solr and Java REST frameworks.
         cv:startDate "2007-04" ;
         cv:endDate "2010-06" ;
         cv:jobTitle "Systems Developer" ;
-        cv:jobDescription """Role in the university IT department,
-        working on in-house Java solutions to connect various systems.""" ;
+        cv:jobDescription """
+Building in-house Java solutions to connect various systems in the IT department.
+""" ;
     ],
     [
         a cv:WorkHistory ;
@@ -192,8 +190,9 @@ location using using Apache Solr and Java REST frameworks.
         cv:startDate "2006-02" ;
         cv:endDate "2005-10" ;
         cv:jobTitle "Tester" ;
-        cv:jobDescription """Manual and (Python) automation tester for a
-web-based software product."""
+        cv:jobDescription """
+Manual and (Python) automation tester for a web-based software product.
+"""
     ],
     [
         a                 cv:WorkHistory ;
@@ -201,7 +200,11 @@ web-based software product."""
         cv:startDate      "2004-07"      ;
         cv:endDate        "2004-09"      ;
         cv:jobTitle       "Tester"       ;
-        cv:jobDescription """I tested performance for a new Ethernet interface and its drivers on both Linux and Windows servers.""" ;
+        cv:jobDescription """
+Performance testing for a new Ethernet card and drivers on both Linux and Windows.
+
+Created via bash scripts an early version of what today would be called Continuous Integration.
+        """ ;
     ] ;
 
     # Education and Qualifications
