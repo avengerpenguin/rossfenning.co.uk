@@ -237,11 +237,12 @@ Passed an intermediate German via University of Cambridge Language Centre.
 """ ;
     ] ;
 
-  cv:hasOtherInfo [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Bodhrán" ],
-                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Tin Whistle" ],
+  cv:hasOtherInfo [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Traditional music including playting Bodhrán and Tin Whistle" ],
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Karate" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Wine (WSET 2 qualified)" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Real Ale (CAMRA member)" ],
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Philosophy" ],
-                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Category Theory" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Computer Science, Category Theory, Pure Mathematics" ],
 
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Publications ; cv:otherInfoDescription "Fenning, R., Dogan, H., Phalp, K. (2014). Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)." ]
 .
