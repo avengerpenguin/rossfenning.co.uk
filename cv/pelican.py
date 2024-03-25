@@ -1,11 +1,12 @@
 import json
+from collections import defaultdict
 
 from jinja2 import Environment, PackageLoader
 from laconia import ThingFactory
 from pelican import signals
 from pyld import jsonld
 from rdflib import Graph, Namespace
-from sh import xelatex
+from sh import pdflatex
 
 env_md = Environment(loader=PackageLoader("cv", "templates"))
 template_md = env_md.get_template("template.md")
@@ -43,6 +44,12 @@ def render(_sender):
         1: "Beginner",
     }
 
+    info = defaultdict(list)
+    for extra in cv.cv_hasOtherInfo:
+        info[str(extra.cv_otherInfoType.any()).split("#")[-1]].append(
+            extra.cv_otherInfoDescription.any()
+        )
+
     jsonld_data = jsonld.compact(
         jsonld.frame(
             json.loads(
@@ -59,22 +66,24 @@ def render(_sender):
         skills=skills,
         skill_levels=skill_levels,
         jsonld=json.dumps(jsonld_data, indent=2),
+        info=info,
     )
 
     # TODO: make configurable
     with open("content/pages/cv.md", "w") as cv_out:
         cv_out.write(out)
 
-    out = template_latex.render(cv=cv, skills=skills, skill_levels=skill_levels)
+    out = template_latex.render(
+        cv=cv, skills=skills, skill_levels=skill_levels, info=info
+    )
 
     # TODO: make configurable
     with open("content/extra/cv.tex", "w") as cv_out:
         cv_out.write(out)
 
     print(
-        xelatex(
+        pdflatex(
             "-halt-on-error",
-            "-interaction=batchmode",
             "cv.tex",
             _cwd="content/extra/",
         )

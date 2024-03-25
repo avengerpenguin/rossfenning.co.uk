@@ -1,66 +1,165 @@
 \documentclass[10pt]{article}
 
+\usepackage[T1]{fontenc}
+%\usepackage[sfdefault]{inter} % https://tug.org/FontCatalogue/
+%\renewcommand*\familydefault{\sfdefault}
+
+% \usepackage[default]{raleway}
+% \usepackage[sfdefault]{biolinum}
+\usepackage[sfdefault,light,semibold,lf]{FiraSans}
+% \usepackage[defaultfam,light,semibold,lining]{montserrat}
+% \usepackage[sfdefault]{roboto}
+
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	margin=1.5cm
+}
+
+\setcounter{secnumdepth}{0} % remove section numbering
+\pdfgentounicode=1 % make ATS friendly
+
+% Palette: https://www.colourlovers.com/palette/3002217/RESUME
+% \usepackage[dvipsnames, svgnames, x11names]{xcolor}
+\usepackage[dvipsnames]{xcolor} % xcolor.pdf Sec.4 Colors by Name
+%\colorlet{icnclr}{gray}
+\definecolor{icnclr}{HTML}{333333}
+% \colorlet [⟨type⟩]{⟨name⟩}[⟨num model⟩]{⟨color ⟩}
+% \definecolor[⟨type⟩]{⟨name⟩}{⟨model-list⟩}{⟨spec-list⟩}
+
+\usepackage{enumitem}
+\setlist[itemize]{
+    noitemsep,
+    left=0pt..1.5em
+}
+\setlist[description]{itemsep=0pt}
+\setlist[enumerate]{align=left}
+
 \usepackage{fullpage}
-\usepackage{fontspec}
-%\usepackage[compact]{titlesec}
-\usepackage{sectsty}
+\usepackage{titlesec}
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+% \titlespacing{\section}{0pt}{*2}{*3}
+\titlespacing{\subsection}{0pt}{*0}{*0}
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sec>}{<before-code>}[<after-code>]
+\titleformat{\section}{\color[HTML]{187A5C}\large\fontseries{black}\selectfont\uppercase}{}{}{\ruleafter}[\global\RemVStrue]
+\titleformat{\subsection}{\large\fontseries{semibold}\selectfont}{}{}{\rvs}
+\titleformat{\subsubsection}{\large\fontseries{medium}\selectfont}{}{}{}
 
-\setmainfont{EB Garamond}
-\setsansfont{Open Sans}
-\sectionfont{\large\sffamily}
-\subsectionfont{\normalsize\sffamily}
+\usepackage{xhfill}
+\newcommand\ruleafter[1]{#1~\xrfill[.5ex]{1pt}[gray]} % add rule after title in .5 x-height
 
-%\addtolength{}{}
+\newif\ifRemVS % remove vspace between \section & \subsection
+\newcommand{\rvs}{
+    \ifRemVS
+        \vspace{-0.7ex}
+    \fi
+    \global\RemVSfalse
+}
+
+\usepackage{multicol}
+\usepackage{fontawesome5}
+
+\usepackage[bookmarks=false]{hyperref} % [imp!]
+\hypersetup{ % https://en.wikibooks.org/wiki/LaTeX/Hyperlinks
+    colorlinks=true,
+    urlcolor=[HTML]{FB573B},
+    pdftitle={Ross Fenning's CV},
+}
+
+\usepackage[page]{totalcount}
+\usepackage{fancyhdr}
+\usepackage{color}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+
 
 \begin{document}
 
-\title{\bf{Curriculum Vitae}}
-\author{
-  Ross Fenning\\
-  Mobile: 07763 616456\\
-  e-mail: cv@rossfenning.co.uk
-}
+\begin{multicols}{3}
+  \begin{flushleft}
+    {\color{icnclr}\faIcon{phone}} \href{tel:+447763616456}{07763 616456} \\
+    {\color{icnclr}\faEnvelope[regular]} \href{mailto:cv@rossfenning.co.uk}{cv@rossfenning.co.uk} \\
+  \end{flushleft}
 
-\date{\today\footnote{Latest version always available at ((( cv.cv_aboutPerson.any().foaf_homepage.any() )))}}
-\maketitle
+\columnbreak
 
-\vspace{-0.5cm}
+  \begin{center}
+      {\huge\bfseries Ross Fenning}
+  \end{center}
 
-\hrulefill
+\columnbreak
+
+  \begin{flushright}
+    \href{https://www.linkedin.com/in/rossfenning/}{rossfenning} {\color{icnclr}\faLinkedinIn} \\
+    \href{https://github.com/avengerpenguin}{avengerpenguin} {\color{icnclr}\faGithub} \\
+  \end{flushright}
+\end{multicols}
+
+
+%== HEADER ==%
+%\begin{center}
+%    {\fontsize{36}{36}\selectfont\interthin Ross \interheavy Fenning} \\ \bigskip
+%    \linebreak\linebreak\today\footnote{If old, there may be an updated version at ((( cv.cv_aboutPerson.any().foaf_homepage.any() )))}
+%\end{center}
 
 \section*{Personal Profile}
 ((( cv.cv_cvDescription.any() )))
 
 \section*{Skills}
 
+\begin{description}
 ((* for level in range(5, 2, -1) *))
-\subsection*{((( skill_levels[level] )))}
-
-((( skills[level]|map(attribute='cv_skillName')|map('first')|sort|join(', ') )))
+\item[((( skill_levels[level] )))] ((( skills[level]|map(attribute='cv_skillName')|map('first')|sort|join(', ') )))
 ((* endfor *))
+\end{description}
 
-\vfill
-
-\section*{Work Experience}
-
+\section*{Experience}
 ((* for work_history in cv.cv_hasWorkHistory | sort(attribute='cv_startDate', reverse=True) *))
 ((* if work_history.cv_employedIn *))((* if work_history.cv_employedIn.any().cv_Name *))
-\subsection*{((* if work_history.cv_jobTitle *))((( work_history.cv_jobTitle|first ))) at ((* endif *))((( work_history.cv_employedIn.any().cv_Name.any() )))((* if work_history.cv_startDate *)): ((( work_history.cv_startDate ))) to ((* if work_history.cv_endDate *))((( work_history.cv_endDate.any() )))((* else *))present((* endif *))((* endif *))}
-
-((* if work_history.cv_jobDescription *))((( work_history.cv_jobDescription.any() )))((* endif *))
+\subsection*{((* if work_history.cv_jobTitle *))((( work_history.cv_jobTitle|first ))) at ((* endif *))((( work_history.cv_employedIn.any().cv_Name.any() )))((* if work_history.cv_startDate *)) \hfill ((( work_history.cv_startDate ))) to ((* if work_history.cv_endDate *))((( work_history.cv_endDate.any() )))((* else *))present((* endif *))((* endif *))}
+((* set lines = work_history.cv_jobDescription.any().split('\n\n') *))
+\begin{itemize}
+((* for line in lines *))
+((* if line *))
+    \item ((( line )))
+((* endif *))
+((* endfor *))
+\end{itemize}
 ((* endif *))((* endif *))
 ((* endfor *))
 
+\section*{Open Source Projects}
+\begin{description}
+    \item[\href{https://github.com/avengerpenguin/voltaire}{voltaire}] An opinionated Python toolkit built on top of Pelican static site generator to do common templates and processes across multiple static websites.
+    \item[\href{https://github.com/avengerpenguin/testypie}{testypie}] A Python test library for recording outbound HTTP requests during tests and saving the response as a mocked fixture.
+    \item[\href{https://github.com/avengerpenguin/pokr}{pokr}] A Python framework for building OKR/KPI dashboards. Provides hooks for generating metrics from 3rd party sources.
+    \item[\href{https://github.com/avengerpenguin/doctrine}{doctrine}] Library using Python metaprogramming to allow central definitions of shared tasks for the \texttt{invoke} task runner.
+    \item[\href{https://github.com/avengerpenguin/quinta}{quinta}] Python cli tool for generating content, Google Search and Google Analytics reports across multiple websites.
+\end{description}
 
 \section*{Education}
-
 ((* for education in cv.cv_hasEducation | sort(attribute='cv_eduGradDate', reverse=True) *))
-
-\subsection*{((( education.cv_eduMajor.any() ))) at ((( education.cv_studiedIn.any().cv_Name.any() ))) [((* if education.cv_eduGradDate *))((( education.cv_eduGradDate )))((* else *))Ongoing((* endif *))]}
-
-((* if education.cv_eduDescription *))((( education.cv_eduDescription.any() )))((* endif *))
-
+\subsection*{((( education.cv_eduMajor.any() ))) at ((( education.cv_studiedIn.any().cv_Name.any() ))) \hfill ((* if education.cv_eduGradDate *))((( education.cv_eduGradDate )))((* else *))Ongoing((* endif *))}
+((* set lines = education.cv_eduDescription.any().split('\n\n') *))
+\begin{itemize}
+((* for line in lines *))
+((* if line *))
+    \item ((( line )))
+((* endif *))
+((* endfor *))
+\end{itemize}
 ((* endfor *))
 
+((* for info_type, info_items in info|items *))
+\section*{(((info_type)))}
+\begin{itemize}
+((* for item in info_items *))
+    \item ((( item )))
+((* endfor *))
+\end{itemize}
+((* endfor *))
 
 \end{document}

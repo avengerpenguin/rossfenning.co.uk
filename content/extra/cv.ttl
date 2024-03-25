@@ -11,30 +11,15 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-
 I am a systems engineer, technical leader, consultant and innovator
 with a holistic approach to Systems, DevOps and software development
 and delivery. This includes software development itself, architecture,
 continuous delivery, reducing duplicated effort and the human side of
 how teams ship changes safely at pace.
 
-Roles I would be looking for next would be Staff or Principal Engineer
-roles starting from £120,000 and upwards. I prefer to remain able to
-touch on any technology stack, but my bias would be towards projects
-primarily using Python or Java.
-
-I am currently working as a Lead Software Engineer at INRIX,
-overseeing the UK half of a team distributed between Manchester and
-Kirkland. I am working on a number of projects using Java, Kafka and
-Kubernetes to continuously deliver services that provide traffic data
-at scale to customers.
-
-Areas I covered as part of working on BBC online included analytics,
-microservices for distributed teams and centralised delivery
-automation. I was driver of reducing overheads and undifferentiated
-heavy lifting in how we build, test and deliver sevices.
-
-
+Roles I would be looking for next would be Staff or Principal Engineer roles starting from £100,000 and upwards.
+My primary experience is in Java or Python ecosystems,
+but I also thrive in polyglot contexts and can be a generalist when needed.
 """;
 
     # Skills
@@ -45,27 +30,21 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "BDD"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Maven"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "REST"                     ; cv:skillLevel 5 ],
-                [ cv:skillName "Debian"                   ; cv:skillLevel 5 ],
+                [ cv:skillName "Debian/Ubuntu"            ; cv:skillLevel 5 ],
                 [ cv:skillName "Agile"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Continuous Delivery"      ; cv:skillLevel 5 ],
                 [ cv:skillName "Kanban"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Python"                   ; cv:skillLevel 5 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
                 [ cv:skillName "UML"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Systems"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Systems Thinking"         ; cv:skillLevel 5 ],
+                [ cv:skillName "Design Thinking"          ; cv:skillLevel 4 ],
                 [ cv:skillName "AWS"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "AWS Cloudformation"       ; cv:skillLevel 5 ],
-                [ cv:skillName "Infrastructure as Code"   ; cv:skillLevel 5 ],
                 [ cv:skillName "Troposphere"              ; cv:skillLevel 5 ],
                 [ cv:skillName "Terraform"                ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS EKS"                  ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS MSK"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "Kafka"                    ; cv:skillLevel 3 ],
-                [ cv:skillName "Kafka Connect"            ; cv:skillLevel 3 ],
-                [ cv:skillName "CentOS"                   ; cv:skillLevel 5 ],
-                [ cv:skillName "Red Hat"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Red Hat/CentOS"           ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
-                [ cv:skillName "Jenkins Pipelines"        ; cv:skillLevel 5 ],
                 [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 5 ],
                 [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
@@ -73,24 +52,21 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "Gradle"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Spring Boot"              ; cv:skillLevel 4 ],
                 [ cv:skillName "Quarkus"                  ; cv:skillLevel 4 ],
-                [ cv:skillName "Eclipse Microprofile"     ; cv:skillLevel 4 ],
                 [ cv:skillName "Scrum"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Kubernetes"               ; cv:skillLevel 4 ],
-                [ cv:skillName "Subversion"               ; cv:skillLevel 4 ],
                 [ cv:skillName "Serverless"               ; cv:skillLevel 4 ],
-                [ cv:skillName "AWS Lambda"               ; cv:skillLevel 4 ],
                 [ cv:skillName "LaTeX"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "GNU Make"                 ; cv:skillLevel 4 ],
-                [ cv:skillName "GNU/Linux"                ; cv:skillLevel 4 ],
+                [ cv:skillName "Linux"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"                     ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"            ; cv:skillLevel 4 ],
                 [ cv:skillName "OpenSearch"               ; cv:skillLevel 4 ],
                 [ cv:skillName "Cucumber"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
-                [ cv:skillName "MySQL"                    ; cv:skillLevel 4 ],
+                [ cv:skillName "PostGIS"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "SQL"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Ruby"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Ruby"                     ; cv:skillLevel 3 ],
                 [ cv:skillName "Selenium"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Django"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Flask"                    ; cv:skillLevel 4 ],
@@ -104,7 +80,6 @@ heavy lifting in how we build, test and deliver sevices.
                 [ cv:skillName "Apache Spark"             ; cv:skillLevel 4 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
-                [ cv:skillName "Groovy"                   ; cv:skillLevel 3 ],
                 [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "GCP"                      ; cv:skillLevel 3 ],
@@ -121,26 +96,21 @@ heavy lifting in how we build, test and deliver sevices.
         a cv:WorkHistory ;
         cv:employedIn _:inrix ;
         cv:startDate "2022-12" ;
-        cv:endDate "2024-03" ;
+        cv:endDate "2024-04" ;
         cv:isCurrent cvbase:True ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
+Lead role across 2 teams distributed between Manchester, UK and Kirkland, USA (8 reports).
 
-Lead role on a team distributed between Manchester, UK and Kirkland,
-USA. Responsibilities include line management of UK engineers,
-planning project implementations and mentoring practices around
-Continuous Delivery and DevOps.
+Mentored on Continuous Delivery, infrastructure as code and DevOps.
 
-I have been tackling challenges with communications over an 8 hour
-time difference, setting technical direction/vision where needed and
-learning more around Kubernetes-based deployments and use of Terraform
-for infrastructure management.
+Built emergent platform on Kubernetes (AWS EKS), Quarkus, Terraform and Github Actions.
 
-Key challenges are delivering data at high scale which has meant the use of
-Kafka, RabbitMQ and reactive patterns in the Quarkus framework. There
-are emerging efforts to do more with generative AI models, data lakes,
-AWS Athena.
+Built event-driven traffic alerting using Kafka, RabbitMQ and Reactive Java (Quarkus).
 
+Build and led a Python project for testing deployed services and validating data output.
+
+Innovated Python project for applying BDD to an AI/LLM-based project.
 """;
     ],
     [
@@ -151,21 +121,20 @@ AWS Athena.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
+Technical leader on highly-available internal Node.js and Spring Boot APIs used across the whole BBC website.
 
-Role in the Search and Navigation team supporting other engineers
-where needed and doing more "hands on" technical work when it comes to
-prototyping or in the DevOps and deployment automation domain.
-I was also involved in architectural design and data modelling for
-improving our pan-website analytics and work to improve our tracking
-beyond simple impressions and clicks, e.g. user engagement tracking
-and audience demographics.
+Mentoring and leading on projects to promote knowledge sharing.
 
-The technical stacks were a mix of Java (Spring Boot, Jersey), Node.js
-(Express) and Python (Flask dashboard, Django for internal tools). I
-contributed significantly to Python and Groovy-based automation for
-AWS and Jenkins CD pipelines.
+Drove architecture and data modelling for a unified approach to analytics collection across the website.
 
+Developed lightweight feature flag mechanisms to allow instant rollout of visual changes while allowing stakeholders
+and designers to see changes privately in situ any time.
 
+Developed and then promoted a unified approach to CD (Jenkins) and deployments (AWS Cloudformation) across 30+ services between up to 4 teams.
+
+Led on Python tooling for automating unified deployments, common infrastructure patterns and testing.
+
+Developed and led on a federated network of dashboards in Python (Flask, aiohttp).
 """;
     ],
     [
@@ -176,13 +145,11 @@ AWS and Jenkins CD pipelines.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Senior Software Engineer" ;
                 cv:jobDescription """
+Developed event-driven data pipelines with Java (Jersey), Apache Camel and ActiveMQ.
 
-Enterprise Integration project migrating the BBC Search product onto
-Java microservices using a mix of REST (JAX-RS, Jersey) and
-message-driven architecture (Apache Camel and ActiveMQ). I worked on
-migrating some services to Spring Boot on AWS later on. Services were
-defined via formal BBC processes involving Cucumber and Ruby.
+Built tooling in Ruby and Cucumber to drive projects via BDD and TDD.
 
+Created a system similar to Docker Compose (but pre-dating that and using Tomcat as the container) for running services and dependencies during builds for full integration testing.
 """;
     ],
     [
@@ -192,11 +159,11 @@ defined via formal BBC processes involving Cucumber and Ruby.
         cv:endDate "2012-02" ;
         cv:jobTitle "Contract Software Engineer" ;
                 cv:jobDescription """
+Building data aggregation services in Java (Spring MVC)
 
-Building Java services feeding data to the Home page with some work
-PHP/JS front end contributions too. Also worked on the BBC Weather
-location using using Apache Solr and Java REST frameworks.
+Contributed to some front end in PHP and JS on the BBC Home page.
 
+Creating geospatial BBC Weather search using Solr and PostGIS
 """ ;
     ],
     [
@@ -205,8 +172,9 @@ location using using Apache Solr and Java REST frameworks.
         cv:startDate "2007-04" ;
         cv:endDate "2010-06" ;
         cv:jobTitle "Systems Developer" ;
-        cv:jobDescription """Role in the university IT department,
-        working on in-house Java solutions to connect various systems.""" ;
+        cv:jobDescription """
+Building in-house Java solutions to connect various systems in the IT department.
+""" ;
     ],
     [
         a cv:WorkHistory ;
@@ -222,8 +190,9 @@ location using using Apache Solr and Java REST frameworks.
         cv:startDate "2006-02" ;
         cv:endDate "2005-10" ;
         cv:jobTitle "Tester" ;
-        cv:jobDescription """Manual and (Python) automation tester for a
-web-based software product."""
+        cv:jobDescription """
+Manual and (Python) automation tester for a web-based software product.
+"""
     ],
     [
         a                 cv:WorkHistory ;
@@ -231,7 +200,11 @@ web-based software product."""
         cv:startDate      "2004-07"      ;
         cv:endDate        "2004-09"      ;
         cv:jobTitle       "Tester"       ;
-        cv:jobDescription """I tested performance for a new Ethernet interface and its drivers on both Linux and Windows servers.""" ;
+        cv:jobDescription """
+Performance testing for a new Ethernet card and drivers on both Linux and Windows.
+
+Created via bash scripts an early version of what today would be called Continuous Integration.
+        """ ;
     ] ;
 
     # Education and Qualifications
@@ -242,8 +215,13 @@ web-based software product."""
         cv:eduStartDate "2012" ;
         cv:eduGradDate "2016" ;
         cv:studiedIn _:bradford ;
-        cv:eduDescription """Software Engineering and Internet Architecture. Awarded by Bradford, run
-in conjunction with the BBC.""" ;
+        cv:eduDescription """
+MSc in Software Engineering and Internet Architecture.
+
+Awarded by Bradford, run in conjunction with the BBC.
+
+Passed with distinction.
+        """ ;
     ],
     [
         a cv:Education ;
@@ -252,9 +230,21 @@ in conjunction with the BBC.""" ;
         cv:eduStartDate "2002" ;
         cv:eduGradDate "2005" ;
         cv:studiedIn _:cambridge ;
-        cv:eduDescription """MA (Hons) (Cantab) in Computer Science from the University of Cambridge.""" ;
-    ] .
+        cv:eduDescription """
+MA (Hons) (Cantab) in Computer Science.
 
+Passed an intermediate German via University of Cambridge Language Centre.
+""" ;
+    ] ;
+
+  cv:hasOtherInfo [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Bodhrán" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Tin Whistle" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Karate" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Philosophy" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Category Theory" ],
+
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Publications ; cv:otherInfoDescription "Fenning, R., Dogan, H., Phalp, K. (2014). Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)." ]
+.
 
 # Little bit about me with some linking to other datasets about publications, projects, etc.
 <http://rossfenning.co.uk/#me> a cv:Person ;

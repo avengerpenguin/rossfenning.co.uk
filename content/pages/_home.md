@@ -8,7 +8,7 @@ Welcome to my personal website. It is mine.
 
 Here are some things about me:
 
-* [CV](/cv/) (or in [PDF form](/cv.pdf))
+* [CV](/cv/) (or in [PDF form](/cv.pdf)) (or in [RDF form](/cv.ttl))
 * [Papers I've published](/papers/)
 
 Here are some things I make:
