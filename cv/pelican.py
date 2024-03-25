@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+
 from jinja2 import Environment, PackageLoader
 from laconia import ThingFactory
 from pelican import signals
@@ -45,8 +46,9 @@ def render(_sender):
 
     info = defaultdict(list)
     for extra in cv.cv_hasOtherInfo:
-        info[str(extra.cv_otherInfoType.any()).split('#')[-1]].append(extra.cv_otherInfoDescription.any())
-
+        info[str(extra.cv_otherInfoType.any()).split("#")[-1]].append(
+            extra.cv_otherInfoDescription.any()
+        )
 
     jsonld_data = jsonld.compact(
         jsonld.frame(
@@ -71,7 +73,9 @@ def render(_sender):
     with open("content/pages/cv.md", "w") as cv_out:
         cv_out.write(out)
 
-    out = template_latex.render(cv=cv, skills=skills, skill_levels=skill_levels, info=info)
+    out = template_latex.render(
+        cv=cv, skills=skills, skill_levels=skill_levels, info=info
+    )
 
     # TODO: make configurable
     with open("content/extra/cv.tex", "w") as cv_out:
