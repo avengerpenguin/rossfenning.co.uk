@@ -191,8 +191,8 @@ Building in-house Java solutions to connect various systems in the IT department
     [
         a cv:WorkHistory ;
         cv:employedIn _:transversal ;
-        cv:startDate "2006-02" ;
-        cv:endDate "2005-10" ;
+        cv:startDate "2005-07" ;
+        cv:endDate "2006-02" ;
         cv:jobTitle "Tester" ;
         cv:jobDescription """
 Manual and (Python) automation tester for a web-based software product.
