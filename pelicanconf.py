@@ -13,9 +13,10 @@ PLUGINS += [
     # "projects",
 ]
 
-STATIC_PATHS = ["extra/cv.pdf", "papers", "../icon"]
+STATIC_PATHS = ["extra/cv.pdf", "extra/cv.ttl", "papers", "../icon"]
 EXTRA_PATH_METADATA = {
     "extra/cv.pdf": {"path": "cv.pdf"},
+    "extra/cv.ttl": {"path": "cv.ttl"},
     "../icon/android-chrome-512x512.png": {"path": "android-chrome-512x512.png"},
     "../icon/android-chrome-192x192.png": {"path": "android-chrome-192x192.png"},
     "../icon/apple-touch-icon.png": {"path": "apple-touch-icon.png"},

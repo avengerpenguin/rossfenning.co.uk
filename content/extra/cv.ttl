@@ -235,8 +235,16 @@ MA (Hons) (Cantab) in Computer Science.
 
 Passed an intermediate German via University of Cambridge Language Centre.
 """ ;
-    ] .
+    ] ;
 
+  cv:hasOtherInfo [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Bodhrán" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Tin Whistle" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Karate" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Philosophy" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Category Theory" ],
+
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Publications ; cv:otherInfoDescription "Fenning, R., Dogan, H., Phalp, K. (2014). Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)." ]
+.
 
 # Little bit about me with some linking to other datasets about publications, projects, etc.
 <http://rossfenning.co.uk/#me> a cv:Person ;

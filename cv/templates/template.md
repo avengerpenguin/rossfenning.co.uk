@@ -27,8 +27,15 @@ typeof: CV
 <div typeof="WorkHistory" property="hasWorkHistory" markdown="1">
 ### {% if work_history.cv_jobTitle %}<span property="jobTitle">{{ work_history.cv_jobTitle|first }}</span> at {% endif %}<span typeof="Company" property="employedIn"><span property="Name">{{ work_history.cv_employedIn.any().cv_Name.any() }}</span></span>{% if work_history.cv_startDate %}: <span property="startDate">{{ work_history.cv_startDate }}</span> to {% if work_history.cv_endDate %}<span property="endDate">{{ work_history.cv_endDate.any() }}</span>{% else %}present{% endif %}{% endif %}
 
-{% if work_history.cv_jobDescription %}{{ work_history.cv_jobDescription.any() }}{% endif %}
+{% set lines = work_history.cv_jobDescription.any().split('\n\n') %}
+{% for line in lines %}
+{% if line %}
+* {{ line }}
+{% endif %}
+{% endfor %}
+
 </div>
+
 {% endif %}{% endif %}
 {% endfor %}
 
@@ -41,7 +48,12 @@ typeof: CV
 
 ### <span property="eduMajor">{{ education.cv_eduMajor.any() }}</span> at <span typeof="EducationalOrg" property="studiedIn"><span property="Name">{{ education.cv_studiedIn.any().cv_Name.any() }}</span></span> ({% if education.cv_eduGradDate %}<span property="eduGradDate">{{ education.cv_eduGradDate }}</span>{% else %}Ongoing{% endif %})
 
-{% if education.cv_eduDescription %}<span property="eduDescription">{{ education.cv_eduDescription.any() }}</span>{% endif %}
+{% set lines = education.cv_eduDescription.any().split('\n\n') %}
+{% for line in lines %}
+{% if line %}
+* {{ line }}
+{% endif %}
+{% endfor %}
 
 </div>
 
@@ -49,14 +61,27 @@ typeof: CV
 
 ### Further Education (2002)
 
-Gained an A grade in each of A-Level Mathematics, Further Mathematics,
-German and Physics. Additionally achieved a B grade in AS-Level French.
-Also completed STEP I Mathematics with grade 1 and STEP Physics with
-grade 3.
+* A grade in each of A-Level Mathematics, Further Mathematics,
+German and Physics.
+* B grade in AS-Level French.
+* STEP I Mathematics with grade 1
+* STEP Physics with grade 3.
 
 ### GCSEs (2000)
 
-10 GCSEs including A\* in Mathematics, Sciences, German and French.
-Attained A in English Language. Also obtained an A grade in an
-Additional Mathematics qualification having completed the GCSE the
-previous year (1999).
+* 9 GCSEs including A\* in Sciences, German and French.
+* A in English Language.
+* A grade in an Additional Mathematics qualification
+
+### GCSEs (1999)
+
+* A\* grade in Mathematics
+
+{% for info_type, info_items in info|items %}
+## {{ info_type }}
+
+{% for item in info_items %}
+* {{ item }}
+{% endfor %}
+
+{% endfor %}
