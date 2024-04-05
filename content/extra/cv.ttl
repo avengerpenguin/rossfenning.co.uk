@@ -20,7 +20,7 @@ how teams ship changes safely at pace.
 Roles I would be looking for next would be Staff or Principal Engineer roles or contract development roles.
 My primary experience is in Java or Python ecosystems,
 but I also thrive in polyglot contexts and can be a generalist when needed.
-I have extensive experience in Cloud Native systems, Kubernetes and full automation of delivery and deployments.
+I have extensive experience in Cloud Native systems, AWS, Kubernetes and full automation of delivery and deployments (CI/CD).
 """;
 
     # Skills
@@ -109,6 +109,8 @@ Lead role across 2 teams distributed between Manchester, UK and Kirkland, USA (8
 
 Built standard deployment platform on Kubernetes (AWS EKS), Quarkus, Terraform, Github Actions.
 
+Developed standardised way to provision (via Terraform) Kubernetes across the company with monitoring and observability baked in.
+
 Mentored on Continuous Delivery, infrastructure as code and DevOps.
 
 Built event-driven traffic alerting using Kafka, RabbitMQ and Reactive Java (Quarkus).
@@ -126,18 +128,18 @@ Innovated Python project for applying BDD to an AI/LLM-based project.
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
-Technical leader on highly-available internal Node.js and Spring Boot APIs used across the whole BBC website.
+Technical leader on highly-available Node.js and Spring Boot APIs used by whole BBC website.
 
 Mentoring and leading on projects to promote knowledge sharing.
 
-Drove architecture and data modelling for a unified approach to analytics collection across the website.
+Drove architecture and data modelling for a unified approach to website analytics collection.
 
 Developed lightweight feature flag mechanisms to allow instant rollout of visual changes while allowing stakeholders
 and designers to see changes privately in situ any time.
 
 Developed and then promoted a unified approach to CD (Jenkins) and deployments (AWS Cloudformation) across 30+ services between up to 4 teams.
 
-Led on Python tooling for automating unified deployments, common infrastructure patterns and testing.
+Led on Python tooling for automating deployments, common infrastructure patterns and testing.
 
 Developed and led on a federated network of dashboards in Python (Flask, aiohttp).
 """;
