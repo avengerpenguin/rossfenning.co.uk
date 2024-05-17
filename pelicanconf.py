@@ -1,4 +1,4 @@
-from voltaire.pelican import *
+from voltaire.pelican import *  # noqa
 
 SITENAME = "Ross Fenning"
 MENUITEMS_START = (
@@ -7,6 +7,9 @@ MENUITEMS_START = (
     ("Papers", "/papers"),
     ("Blog", "https://avengerpenguin.com/"),
 )
+
+if "PLUGINS" not in globals():
+    PLUGINS = []
 
 PLUGINS += [
     "cv.pelican",
