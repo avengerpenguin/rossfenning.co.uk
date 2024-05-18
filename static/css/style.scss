@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Press+Start+2P&display=swap");
 
-$black: #2F2523;
-$brown: #9B8B7E;
-$cream: #F6F2E7;
-$pink:  #CB9D9F;
-$blue:  #6F7293;
+$black: #2f2523;
+$brown: #9b8b7e;
+$cream: #f6f2e7;
+$pink: #cb9d9f;
+$blue: #6f7293;
 
 body {
   color: $black;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 
   header {
     background-color: $black;
     color: $cream;
-    font-family: 'Press Start 2P', cursive;
+    font-family: "Press Start 2P", cursive;
     text-align: center;
     padding: 2rem;
 
@@ -47,7 +47,7 @@ body {
         color: $pink;
       }
       a {
-        font-family: 'Press Start 2P', cursive;
+        font-family: "Press Start 2P", cursive;
         text-decoration: none;
         display: inline-block;
         padding: 0.5em;
@@ -59,7 +59,7 @@ body {
         &:hover {
           color: $pink;
           text-decoration: none;
-          background-image: url('/theme/images/mushroom.png');
+          background-image: url("/theme/images/mushroom.png");
           background-size: 20px;
           background-position: left center;
           background-repeat: no-repeat;
@@ -73,7 +73,12 @@ main {
   h1 {
     margin-bottom: 0.5em;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $blue;
   }
   p {

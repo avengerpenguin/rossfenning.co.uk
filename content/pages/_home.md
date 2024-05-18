@@ -8,14 +8,14 @@ Welcome to my personal website. It is mine.
 
 Here are some things about me:
 
-* [CV](/cv/) (or in [PDF form](/cv.pdf)) (or in [RDF form](/cv.ttl))
-* [Papers I've published](/papers/)
+- [CV](/cv/) (or in [PDF form](/cv.pdf)) (or in [RDF form](/cv.ttl))
+- [Papers I've published](/papers/)
 
 Here are some things I make:
 
-* [Avenger Penguin (blog)](https://avengerpenguin.com/)
-* [CodeSnips](https://codesnips.pro/)
-* [Traditional Mead UK](https://traditionalmead.uk/)
+- [Avenger Penguin (blog)](https://avengerpenguin.com/)
+- [CodeSnips](https://codesnips.pro/)
+- [Traditional Mead UK](https://traditionalmead.uk/)
 
 <script type="application/ld+json">
 {
