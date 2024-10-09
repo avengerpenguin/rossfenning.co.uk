@@ -96,7 +96,7 @@ requests==2.32.0
     # via plantuml-markdown
 rich==13.7.1
     # via pelican
-sh==2.0.7
+sh==2.1.0
     # via
     #   -r requirements.in
     #   voltaire
