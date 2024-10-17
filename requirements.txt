@@ -30,6 +30,8 @@ ghp-import==2.1.0
     # via voltaire
 graphviz==0.20.3
     # via voltaire
+html5lib-modern==1.2
+    # via rdflib
 idna==3.7
     # via
     #   anyio
@@ -38,8 +40,6 @@ invoke==2.2.0
     # via
     #   doctrine
     #   voltaire
-isodate==0.6.1
-    # via rdflib
 jinja2==3.1.4
     # via
     #   -r requirements.in
@@ -88,7 +88,7 @@ python-dateutil==2.9.0.post0
     #   pelican
 pytz==2024.1
     # via feedgenerator
-rdflib==7.0.0
+rdflib==7.1.0
     # via
     #   -r requirements.in
     #   laconia
@@ -102,7 +102,6 @@ sh==2.1.0
     #   voltaire
 six==1.16.0
     # via
-    #   isodate
     #   livereload
     #   plantuml-markdown
     #   python-dateutil
