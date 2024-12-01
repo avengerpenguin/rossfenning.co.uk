@@ -1,32 +1,35 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %}Github Projects{% endblock %} {%
+block content %}
 
-{% block title %}Github Projects{% endblock %}
-
-{% block content %}
-
-    <style>
-        img {
-            display: inline-block;
-        };
-    </style>
-    <h1>Github Projects</h1>
-    {% for project in github_projects %}
-        <h2>{{ project.name }}</h2>
-        {% for file in project.get_dir_contents('.') %}
-            {% if file.name == 'setup.py' %}
-            <a href="https://github.com/{{project.full_name}}/workflows/biscuit/badge"><img src="https://github.com/{{project.full_name}}/workflows/biscuit/badge.svg"></a>
-            <a href="https://github.com/{{project.full_name}}/workflows/python/badge"><img src="https://github.com/{{project.full_name}}/workflows/python/badge.svg"></a>
-            {% endif %}
-            {% if file.name == 'setup.py' %}
-            <a href="https://results.pre-commit.ci/latest/github/{{project.full_name}}/{{project.default_branch}}"><img src="https://results.pre-commit.ci/badge/github/{{project.full_name}}/{{project.default_branch}}.svg"></a>
-            {% endif %}
-        {% endfor %}
-        <p><a href="{{ project.github_url }}">See {{ project.name }} on GitHub</a></p>
+<style>
+  img {
+    display: inline-block;
+  }
+</style>
+<h1>Github Projects</h1>
+{% for project in github_projects %}
+<h2>{{ project.name }}</h2>
+{% for file in project.get_dir_contents('.') %} {% if file.name == 'setup.py' %}
+<a href="https://github.com/{{project.full_name}}/workflows/biscuit/badge"
+  ><img
+    src="https://github.com/{{project.full_name}}/workflows/biscuit/badge.svg"
+/></a>
+<a href="https://github.com/{{project.full_name}}/workflows/python/badge"
+  ><img
+    src="https://github.com/{{project.full_name}}/workflows/python/badge.svg"
+/></a>
+{% endif %} {% if file.name == 'setup.py' %}
+<a
+  href="https://results.pre-commit.ci/latest/github/{{project.full_name}}/{{project.default_branch}}"
+  ><img
+    src="https://results.pre-commit.ci/badge/github/{{project.full_name}}/{{project.default_branch}}.svg"
+/></a>
+{% endif %} {% endfor %}
+<p><a href="{{ project.github_url }}">See {{ project.name }} on GitHub</a></p>
 <!--        <h2>{{ project.name }} <sup>({{ project.language }})</sup></h2>-->
 <!--        {% if project.description %}<p>{{ project.description }}</p>{% endif %}-->
 <!--        <p>-->
 <!--            {% if project.homepage %}<a href="{{ project.homepage }}">Homepage</a>{% endif %}-->
 <!--            <a href="{{ project.github_url }}">GitHub</a>-->
 <!--        </p>-->
-    {% endfor %}
-{% endblock %}
+{% endfor %} {% endblock %}
