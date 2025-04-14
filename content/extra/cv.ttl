@@ -105,13 +105,13 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
           cv:isCurrent cvbase:True ;
           cv:jobtitle "Staff Software Engineer" ;
           cv:jobDescription """
-          Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
+Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
 
-          Worked with Python (FastAPI), Typescript (Svelte), PostgresQL, AWS Document DB, data pipelines, Ruby (Rails).
+Worked with Python (FastAPI), Typescript (Svelte), PostgresQL, AWS Document DB, data pipelines, Ruby (Rails).
 
-          After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
+After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
 
-          Lead a transition from a Spotify-style "chapter" model for technical disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
+Lead a transition from a Spotify-style "chapter" model for technical disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
           """;
       ],
     [
