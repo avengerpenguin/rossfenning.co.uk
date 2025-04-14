@@ -12,8 +12,8 @@
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
 I am a Principal/Staff software engineer, technical leader/consultant
-with a holistic approach to Systems, DevOps and software development
-and delivery. This includes software development itself, architecture,
+with a holistic approach to Systems, DevOps and software delivery.
+This includes software development itself, architecture,
 continuous delivery, reducing duplicated effort and the human side of
 how teams ship changes safely at pace.
 
@@ -29,7 +29,6 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
     cv:hasSkill [ cv:skillName "RDF"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Linked Data"              ; cv:skillLevel 5 ],
                 [ cv:skillName "TDD"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "nginx"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "BDD"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Maven"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "REST"                     ; cv:skillLevel 5 ],
@@ -82,7 +81,6 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Redis"                    ; cv:skillLevel 3 ],
                 [ cv:skillName "FastAPI"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "Apache Spark"             ; cv:skillLevel 4 ],
-                [ cv:skillName "Big Data"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
@@ -91,7 +89,7 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "MongoDB"                  ; cv:skillLevel 2 ],
-                [ cv:skillName "Haskell"                  ; cv:skillLevel 2 ]
+                [ cv:skillName "Haskell"                  ; cv:skillLevel 3 ]
             ;
 
 
@@ -110,7 +108,7 @@ Worked with Python (FastAPI), Typescript (Svelte), PostgresQL, AWS Document DB, 
 
 After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
 
-Lead a transition from a Spotify-style "chapter" model for technical disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
+Lead a transition from a Spotify-style "chapter" model for disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
           """;
       ],
     [
@@ -130,8 +128,6 @@ Developed standardised way to provision (via Terraform) Kubernetes across the co
 Mentored on Continuous Delivery, infrastructure as code and DevOps.
 
 Built event-driven traffic alerting using Kafka, RabbitMQ and Reactive Java (Quarkus).
-
-Build and led a Python project for testing deployed services and validating data output.
 
 Innovated Python project for applying BDD to an AI/LLM-based project.
 """;
@@ -264,8 +260,7 @@ Passed an intermediate German via University of Cambridge Language Centre.
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Karate" ],
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Wine (WSET 2 qualified)" ],
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Real Ale (CAMRA member)" ],
-                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Philosophy" ],
-                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Computer Science, Category Theory, Pure Mathematics" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Computer Science, Category Theory, Pure Mathematics, Philosophy" ],
 
                   [ a cv:OtherInfo ; cv:otherInfoType cvbase:Publications ; cv:otherInfoDescription "Fenning, R., Dogan, H., Phalp, K. (2014). Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)." ]
 .
