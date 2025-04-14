@@ -103,7 +103,7 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
           cv:employedIn _:bridgeu ;
           cv:startDate "2024-05" ;
           cv:isCurrent cvbase:True ;
-          cv:jobtitle "Staff Software Engineer" ;
+          cv:jobTitle "Staff Software Engineer" ;
           cv:jobDescription """
 Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
 
