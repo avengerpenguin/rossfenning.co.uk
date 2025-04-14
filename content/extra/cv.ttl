@@ -45,12 +45,10 @@ I have extensive experience in Cloud Native systems, AWS, Kubernetes and full au
                 [ cv:skillName "AWS MSK"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "AWS EKS"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "AWS Glue"                 ; cv:skillLevel 4 ],
-                [ cv:skillName "Troposphere"              ; cv:skillLevel 5 ],
                 [ cv:skillName "Terraform"                ; cv:skillLevel 4 ],
                 [ cv:skillName "Kafka"                    ; cv:skillLevel 3 ],
                 [ cv:skillName "Red Hat/CentOS"           ; cv:skillLevel 5 ],
                 [ cv:skillName "Jenkins"                  ; cv:skillLevel 5 ],
-                [ cv:skillName "Apache HTTP Server"       ; cv:skillLevel 5 ],
                 [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Java"                     ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
@@ -97,12 +95,28 @@ I have extensive experience in Cloud Native systems, AWS, Kubernetes and full au
 
     # Employment History
     cv:hasWorkHistory
+      [
+          a cv:WorkHistory ;
+          cv:employedIn _:bridgeu ;
+          cv:startDate "2024-05" ;
+          cv:isCurrent cvbase:True ;
+          cv:jobtitle "Staff Software Engineer" ;
+          cv:jobDescription """
+          Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
+
+          Worked with Python (FastAPI), Typescript (Svelte), PostgresQL, AWS Document DB, data pipelines, Ruby (Rails).
+
+          After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
+
+          Lead a transition from a Spotify-style "chapter" model for technical disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
+          """;
+      ],
     [
         a cv:WorkHistory ;
         cv:employedIn _:inrix ;
         cv:startDate "2022-12" ;
         cv:endDate "2024-04" ;
-        cv:isCurrent cvbase:True ;
+        cv:isCurrent cvbase:False ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
 Lead role across 2 teams distributed between Manchester, UK and Kirkland, USA (8 reports).
@@ -266,6 +280,8 @@ Passed an intermediate German via University of Cambridge Language Centre.
 <http://dx.doi.org/10.1007/978-3-662-43745-2_33> owl:sameAs <doi:10.1007/978-3-662-43745-2_33> .
 
 
+_:bridgeu       a          cv:Company  ;
+            cv:Name    "BridgeU" .
 _:inrix       a          cv:Company  ;
             cv:Name    "INRIX" .
 _:bbcnorth    a          cv:Company  ;

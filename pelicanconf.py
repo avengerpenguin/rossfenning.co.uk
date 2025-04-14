@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from voltaire.pelican import *  # noqa
 
 SITENAME = "Ross Fenning"
@@ -37,3 +39,7 @@ TEMPLATE_PAGES = {
 }
 GITHUB_USER = "avengerpenguin"
 THEME_TEMPLATES_OVERRIDES = ["theme/templates"]
+
+
+path: Path = Path.cwd() / "static" / "css" / "style.css"
+LOCAL_SCSS = str(path)

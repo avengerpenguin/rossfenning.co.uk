@@ -1,123 +1,240 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fira+Code:wght@300..700&family=Orbitron:wght@400..900&display=swap');
 
-$black: #2F2523;
-$brown: #9B8B7E;
-$cream: #F6F2E7;
-$pink:  #CB9D9F;
-$blue:  #6F7293;
+:root {
+  --color-bg: #0b0c1a; /* Midnight Blue Background */
+  --color-surface: #1a1b2f; /* Slightly lighter panel/card background */
+  --color-text: #e0e0e0; /* Light grey text */
+  --color-text-muted: #a5a5a5; /* Muted secondary text */
 
-body {
-  color: $black;
-  font-family: 'Roboto Slab', serif;
+  --color-primary: #00ffe7; /* Neon Cyan */
+  --color-accent: #ff47a3; /* Neon Pink */
+  --color-highlight: #faff00; /* Vibrant Yellow (for hover or bold highlights) */
 
-  header {
-    background-color: $black;
-    color: $cream;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    padding: 2rem;
+  --color-border: #2c2c3c; /* Subtle border color */
+  --color-shadow: rgba(0, 255, 231, 0.2); /* Glow shadow from cyan */
 
-    h1 {
-      &:before {
-        content: ">";
-      }
-      a {
-        color: $cream;
-        text-decoration: none;
-        &:visited {
-          color: $cream;
-          text-decoration: none;
-        }
-        &:hover {
-          color: $pink;
-          text-decoration: none;
-        }
-      }
-    }
+  --font-body: 'Chakra Petch', sans-serif;
+  --font-heading: 'Orbitron', sans-serif; /* Retro-tech vibe */
+  --font-mono: 'Fira Code ', monospace;
+
+  --radius: 0.75rem;
+  --transition: 0.2s ease-in-out;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 12ch; /* Number of characters in "Ross Fenning" */
+  }
+}
 
-  nav {
-    max-width: 40rem;
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+
+  body {
+    background-color: var(--color-bg);
     margin: 0 auto;
-    text-align: center;
-    li {
-      //margin-left: 1em;
-      margin-right: 2em;
-      &.active {
-        color: $pink;
-      }
-      a {
-        font-family: 'Press Start 2P', cursive;
-        text-decoration: none;
-        display: inline-block;
-        padding: 0.5em;
-        padding-left: 2em;
-        color: $blue;
-        &:visited {
-          color: $blue;
-        }
-        &:hover {
-          color: $pink;
-          text-decoration: none;
-          background-image: url('/theme/images/mushroom.png');
-          background-size: 20px;
-          background-position: left center;
-          background-repeat: no-repeat;
-        }
-      }
-    }
-  }
-}
 
-main {
-  h1 {
-    margin-bottom: 0.5em;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: $blue;
-  }
-  p {
-    color: $black;
-  }
-  a {
-    color: $blue;
-    &:visited {
-      color: $brown;
-    }
-    &:hover {
-      color: $pink;
-      text-decoration: none;
-    }
-  }
-}
-
-/*
-
-nav {
-  font-family: 'Press Start 2P', cursive;
-  padding-top: 1em;
-  float: left;
-  li {
     a {
-      display: block;
-      padding: 0.5em;
-      padding-left: 2em;
-      color: $blue;
-      &:hover {
-        color: $pink;
-        text-decoration: none;
-        //margin-left: -2em;
-        background-image: url('/theme/images/mushroom.png');
-        background-size: 20px;
-        background-position: left center;
+      color: var(--color-primary);
+      transition: color var(--transition);
+    }
+
+    a:visited {
+      color: var(--color-primary);
+    }
+
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    header {
+      max-width: 100%;
+
+      h1 {
+        margin: 0 auto;
+        font-size: 4rem;
+        color: var(--color-primary);
+        font-family: var(--font-heading);
+        letter-spacing: 1px;
+        text-shadow: 0 0 4px var(--color-primary);
+        overflow: hidden;
+        padding: 1.5rem 3rem;
+
+        white-space: nowrap;
+        border-right: 2px solid var(--color-highlight); /* Blinking cursor */
+        width: 0;
+        animation: typing 2s steps(12, end) forwards, blink 0.75s step-end infinite;
+      }
+
+      nav {
+        margin: 0.5em auto;
+        padding: 1.5rem 2rem;
+        background-color: var(--color-surface);
+        box-shadow: 0 2px 10px var(--color-shadow);
+        font-family: var(--font-heading), sans-serif;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          a {
+            margin-left: 2rem;
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color var(--transition);
+
+            &:visited {
+              color: var(--color-text);
+              text-decoration: none;
+            }
+
+            &:hover {
+              color: var(--color-accent);
+            }
+
+          }
+        }
       }
     }
   }
 }
 
-main {
-  h1, h2, h3, h4, h5, h6 {
-    color: $brown;
-  }
-}
-*/
+
+//@import url("https://fonts.googleapis.com/css?family=Roboto+Slab|Press+Start+2P&display=swap");
+//
+//$black: #2F2523;
+//$brown: #9B8B7E;
+//$cream: #F6F2E7;
+//$pink:  #CB9D9F;
+//$blue:  #6F7293;
+//
+//body {
+//  color: $black;
+//  font-family: 'Roboto Slab', serif;
+//
+//  header {
+//    background-color: $black;
+//    color: $cream;
+//    font-family: 'Press Start 2P', cursive;
+//    text-align: center;
+//    padding: 2rem;
+//
+//    h1 {
+//      &:before {
+//        content: ">";
+//      }
+//      a {
+//        color: $cream;
+//        text-decoration: none;
+//        &:visited {
+//          color: $cream;
+//          text-decoration: none;
+//        }
+//        &:hover {
+//          color: $pink;
+//          text-decoration: none;
+//        }
+//      }
+//    }
+//  }
+//
+//  nav {
+//    max-width: 40rem;
+//    margin: 0 auto;
+//    text-align: center;
+//    li {
+//      //margin-left: 1em;
+//      margin-right: 2em;
+//      &.active {
+//        color: $pink;
+//      }
+//      a {
+//        font-family: 'Press Start 2P', cursive;
+//        text-decoration: none;
+//        display: inline-block;
+//        padding: 0.5em;
+//        padding-left: 2em;
+//        color: $blue;
+//        &:visited {
+//          color: $blue;
+//        }
+//        &:hover {
+//          color: $pink;
+//          text-decoration: none;
+//          background-image: url('/theme/images/mushroom.png');
+//          background-size: 20px;
+//          background-position: left center;
+//          background-repeat: no-repeat;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//main {
+//  h1 {
+//    margin-bottom: 0.5em;
+//  }
+//  h1, h2, h3, h4, h5, h6 {
+//    color: $blue;
+//  }
+//  p {
+//    color: $black;
+//  }
+//  a {
+//    color: $blue;
+//    &:visited {
+//      color: $brown;
+//    }
+//    &:hover {
+//      color: $pink;
+//      text-decoration: none;
+//    }
+//  }
+//}
+//
+///*
+//
+//nav {
+//  font-family: 'Press Start 2P', cursive;
+//  padding-top: 1em;
+//  float: left;
+//  li {
+//    a {
+//      display: block;
+//      padding: 0.5em;
+//      padding-left: 2em;
+//      color: $blue;
+//      &:hover {
+//        color: $pink;
+//        text-decoration: none;
+//        //margin-left: -2em;
+//        background-image: url('/theme/images/mushroom.png');
+//        background-size: 20px;
+//        background-position: left center;
+//      }
+//    }
+//  }
+//}
+//
+//main {
+//  h1, h2, h3, h4, h5, h6 {
+//    color: $brown;
+//  }
+//}
+//*/
