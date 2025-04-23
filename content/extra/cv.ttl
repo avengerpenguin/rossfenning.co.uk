@@ -87,7 +87,7 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
                 [ cv:skillName "GCP"                      ; cv:skillLevel 3 ],
-                [ cv:skillName "Scalewway"                ; cv:skillLevel 4 ],
+                [ cv:skillName "Scaleway"                ; cv:skillLevel 4 ],
                 [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "MongoDB"                  ; cv:skillLevel 2 ],
