@@ -87,7 +87,10 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "MongoDB"                  ; cv:skillLevel 3 ],
-                [ cv:skillName "Haskell"                  ; cv:skillLevel 3 ]
+                [ cv:skillName "Haskell"                  ; cv:skillLevel 3 ],
+                [ cv:skillName "Langchain"                ; cv:skillLevel 3 ],
+                [ cv:skillName "Ollama"                   ; cv:skillLevel 3 ],
+                [ cv:skillName "LLMs"                     ; cv:skillLevel 3 ]
             ;
 
 
