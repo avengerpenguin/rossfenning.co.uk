@@ -90,7 +90,7 @@ rdflib==7.1.4
     # via
     #   -r requirements.in
     #   laconia
-requests==2.32.0
+requests==2.32.4
     # via plantuml-markdown
 rich==13.7.1
     # via pelican
