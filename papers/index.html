@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Papers | Ross Fenning</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rossfenning.co.uk/papers/" />
+    <meta property="og:title" content="Ross Fenning - Papers" />
+    <meta property="og:description" content="Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)" />
+
+    <link href="https://rossfenning.co.uk/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ross Fenning Full Atom Feed" />
+
+
+  <meta name="description" content="Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)" />
+
+
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LP6GLVPJS5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LP6GLVPJS5');
+    </script>
+
+
+
+
+    <link rel="stylesheet" href="https://rossfenning.co.uk/theme/css/awsm.css" />
+
+        <link rel="stylesheet" href="https://rossfenning.co.uk/theme/css/common.min.css?64950869">
+
+        <link rel="stylesheet" href="https://rossfenning.co.uk/theme/css/style.min.css?f73e1d05">
+
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="https://rossfenning.co.uk/">Ross Fenning</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/papers">Papers</a></li>
+                <li><a href="https://avengerpenguin.com/">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main>
+    <h1>Papers</h1>
+    
+
+    <ul>
+<li><a href="/papers/applicability2014.pdf">Applicability of <span class="caps">SSM</span> and <span class="caps">UML</span> for Designing a Search Application for the British Broadcasting Corporation (<span class="caps">BBC</span>)</a></li>
+</ul>
+
+
+
+	</main>
+
+<script type="text/javascript">
+const copyButtonLabel = "Copy";
+
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+  // only add button if browser supports Clipboard API
+  if (navigator.clipboard) {
+    let button = document.createElement("button");
+
+    button.innerText = copyButtonLabel;
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+      await copyCode(block, button);
+    });
+  }
+});
+
+async function copyCode(block, button) {
+  let code = block.querySelector("code");
+  let text = code.innerText;
+
+  await navigator.clipboard.writeText(text);
+
+  // visual feedback that task is completed
+  button.innerText = "Copied";
+
+  setTimeout(() => {
+    button.innerText = copyButtonLabel;
+  }, 2000);
+}
+</script>
+</body>
+</html>
