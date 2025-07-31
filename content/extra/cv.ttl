@@ -11,18 +11,17 @@
     cv:aboutPerson <http://rossfenning.co.uk/#me> ;
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
-I am a Principal/Staff software engineer, technical leader/consultant
-with a holistic approach to Systems, DevOps and software delivery.
+I am a software engineer with 20+ years experience currently working at the level of
+Principal/technical leader/consultant with a holistic approach to Systems, DevOps and software delivery.
 This includes software development itself, architecture,
 continuous delivery, reducing duplicated effort and the human side of
 how teams ship changes safely at pace.
 
 My primary experience is in Java or Python backends in web development stacks,
 but I also thrive in polyglot contexts and can be a generalist when needed.
-I have expertise in Cloud Native systems, AWS, GCP, Docker, Kubernetes and full automation of delivery
-and deployments (CI/CD) with extensive experience in infrastructure-as-code and Platform Engineering.
+I have expertise in Continuous Delivery, DevOps, Platform Engineering, Infrastructe-as-code as well as Data Engineering.
 
-I have domain expertise in Search, delivering high traffic web frontends, analytics, data pipelines and platform migrations.
+I have domain expertise in Search, Data, AI, delivering high traffic web frontends, analytics, data pipelines and platform migrations.
 """;
 
     # Skills
@@ -30,7 +29,6 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Linked Data"              ; cv:skillLevel 5 ],
                 [ cv:skillName "TDD"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "BDD"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Maven"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "REST"                     ; cv:skillLevel 5 ],
                 [ cv:skillName "Agile"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 5 ],
@@ -49,10 +47,8 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "DevOps"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Java"                     ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
-                [ cv:skillName "Gradle"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Spring Boot"              ; cv:skillLevel 5 ],
                 [ cv:skillName "Quarkus"                  ; cv:skillLevel 5 ],
-                [ cv:skillName "Scrum"                    ; cv:skillLevel 5 ],
                 [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Kubernetes"               ; cv:skillLevel 4 ],
                 [ cv:skillName "Serverless"               ; cv:skillLevel 4 ],
@@ -66,11 +62,9 @@ I have domain expertise in Search, delivering high traffic web frontends, analyt
                 [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
                 [ cv:skillName "PostGIS"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "SQL"                      ; cv:skillLevel 5 ],
-                [ cv:skillName "Ruby"                     ; cv:skillLevel 3 ],
-                [ cv:skillName "Selenium"                 ; cv:skillLevel 3 ],
-                [ cv:skillName "Django"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Django"                   ; cv:skillLevel 5 ],
                 [ cv:skillName "Flask"                    ; cv:skillLevel 5 ],
-                [ cv:skillName "Quart"                    ; cv:skillLevel 4 ],
+                [ cv:skillName "FastAPI"                  ; cv:skillLevel 5 ],
                 [ cv:skillName "Git"                      ; cv:skillLevel 5 ],
                 [ cv:skillName "Soft Systems Methodology" ; cv:skillLevel 3 ],
                 [ cv:skillName "SPARQL"                   ; cv:skillLevel 4 ],
@@ -108,6 +102,8 @@ Hired initially to lead Backend Chapter and drive through a "Tech Transformation
 Worked with Python (FastAPI), Typescript (Svelte), PostgresQL, AWS Document DB, data pipelines, Ruby (Rails).
 
 After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
+
+Departure of other Staff Engineers made me de facto lead on Platform Engineering, DevOps and Data Engineering as well as Backend and Architectural Lead.
 
 Lead a transition from a Spotify-style "chapter" model for disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
           """;
