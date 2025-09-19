@@ -86,7 +86,7 @@ python-dateutil==2.9.0.post0
     #   pelican
 pytz==2024.1
     # via feedgenerator
-rdflib==7.1.4
+rdflib==7.2.1
     # via
     #   -r requirements.in
     #   laconia
