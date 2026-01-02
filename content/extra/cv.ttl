@@ -74,8 +74,9 @@ I have domain expertise in Search, Data, AI, delivering high traffic web fronten
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Typescript"               ; cv:skillLevel 3 ],
                 [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
-                [ cv:skillName "GCP"                      ; cv:skillLevel 3 ],
-                [ cv:skillName "Scaleway"                 ; cv:skillLevel 4 ],
+                [ cv:skillName "GCP"                      ; cv:skillLevel 4 ],
+                [ cv:skillName "BigQuery"                 ; cv:skillLevel 4 ],
+                [ cv:skillName "Scaleway"                 ; cv:skillLevel 3 ],
                 [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
                 [ cv:skillName "MongoDB"                  ; cv:skillLevel 3 ],
@@ -91,7 +92,8 @@ I have domain expertise in Search, Data, AI, delivering high traffic web fronten
       [
           a cv:WorkHistory ;
           cv:employedIn _:bridgeu ;
-          cv:startDate "2024-05" ;
+          cv:startDate "2024" ;
+          cv:endDate "2025" ;
           cv:isCurrent cvbase:True ;
           cv:jobTitle "Staff Software Engineer" ;
           cv:jobDescription """
@@ -109,8 +111,8 @@ Lead a transition from a Spotify-style "chapter" model for disciplines to a "gui
     [
         a cv:WorkHistory ;
         cv:employedIn _:inrix ;
-        cv:startDate "2022-12" ;
-        cv:endDate "2024-04" ;
+        cv:startDate "2022" ;
+        cv:endDate "2024" ;
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Lead Software Engineer" ;
                     cv:jobDescription """
@@ -130,8 +132,8 @@ Innovated Python project for applying BDD to an AI/LLM-based project.
     [
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
-        cv:startDate "2015-06" ;
-        cv:endDate "2022-12" ;
+        cv:startDate "2015" ;
+        cv:endDate "2022" ;
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Principal Software Engineer" ;
                     cv:jobDescription """
@@ -154,8 +156,8 @@ Developed and led on a federated network of dashboards in Python (Flask, aiohttp
     [
         a cv:WorkHistory ;
         cv:employedIn _:bbcnorth ;
-        cv:startDate "2012-02" ;
-        cv:endDate "2015-06" ;
+        cv:startDate "2012" ;
+        cv:endDate "2015" ;
         cv:isCurrent cvbase:False ;
         cv:jobTitle "Senior Software Engineer" ;
                 cv:jobDescription """
@@ -169,8 +171,8 @@ Created a system similar to Docker Compose (but pre-dating that and using Tomcat
     [
         a cv:WorkHistory ;
         cv:employedIn _:bbcwales ;
-        cv:startDate "2010-12" ;
-        cv:endDate "2012-02" ;
+        cv:startDate "2010" ;
+        cv:endDate "2012" ;
         cv:jobTitle "Contract Software Engineer" ;
                 cv:jobDescription """
 Building data aggregation services in Java (Spring MVC)
@@ -183,8 +185,8 @@ Creating geospatial BBC Weather search using Solr and PostGIS
     [
         a cv:WorkHistory ;
         cv:employedIn _:cranfield ;
-        cv:startDate "2007-04" ;
-        cv:endDate "2010-06" ;
+        cv:startDate "2007" ;
+        cv:endDate "2010" ;
         cv:jobTitle "Systems Developer" ;
         cv:jobDescription """
 Building in-house Java solutions to connect various systems in the IT department.
@@ -193,16 +195,16 @@ Building in-house Java solutions to connect various systems in the IT department
     [
         a cv:WorkHistory ;
         cv:employedIn _:timlilley ;
-        cv:startDate "2005-10" ;
-        cv:endDate "2006-12" ;
+        cv:startDate "2005" ;
+        cv:endDate "2006" ;
         cv:jobTitle "Fundraiser" ;
         cv:jobDescription """House to house fundraiser on behalf of Amnesty International.""" ;
     ],
     [
         a cv:WorkHistory ;
         cv:employedIn _:transversal ;
-        cv:startDate "2005-07" ;
-        cv:endDate "2006-02" ;
+        cv:startDate "2005" ;
+        cv:endDate "2006" ;
         cv:jobTitle "Tester" ;
         cv:jobDescription """
 Manual and (Python) automation tester for a web-based software product.
@@ -211,8 +213,8 @@ Manual and (Python) automation tester for a web-based software product.
     [
         a                 cv:WorkHistory ;
         cv:employedIn     _:level5       ;
-        cv:startDate      "2004-07"      ;
-        cv:endDate        "2004-09"      ;
+        cv:startDate      "2004"      ;
+        cv:endDate        "2004"      ;
         cv:jobTitle       "Tester"       ;
         cv:jobDescription """
 Performance testing for a new Ethernet card and drivers on both Linux and Windows.
