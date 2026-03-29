@@ -91,10 +91,20 @@ I have domain expertise in Search, Data, AI, delivering high traffic web fronten
     cv:hasWorkHistory
       [
           a cv:WorkHistory ;
+          cv:employedIn _:roku ;
+          cv:startDate "2026" ;
+          cv:isCurrent cvbase:True ;
+          cv:jobTitle "Senior Software Engineer" ;
+          cv:jobDescription """
+Joined team building back office finance systems in Java and Python (Airflow) for Roku Channel ad revenue and TV rights payouts.
+          """;
+      ],
+      [
+          a cv:WorkHistory ;
           cv:employedIn _:bridgeu ;
           cv:startDate "2024" ;
           cv:endDate "2025" ;
-          cv:isCurrent cvbase:True ;
+          cv:isCurrent cvbase:False ;
           cv:jobTitle "Staff Software Engineer" ;
           cv:jobDescription """
 Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
@@ -274,6 +284,8 @@ Passed an intermediate German via University of Cambridge Language Centre.
 <http://dx.doi.org/10.1007/978-3-662-43745-2_33> owl:sameAs <doi:10.1007/978-3-662-43745-2_33> .
 
 
+_:roku          a          cv:Compant  ;
+                cv:Name    "Roku"    .
 _:bridgeu       a          cv:Company  ;
             cv:Name    "BridgeU" .
 _:inrix       a          cv:Company  ;
