@@ -111,7 +111,7 @@ Hired initially to lead Backend Chapter and drive through a "Tech Transformation
 
 Python (FastAPI), Typescript (Svelte), PostgresQL, DocumentDB, data pipelines, Ruby (Rails).
 
-After a series of leavers in engineering leadership, I took a more holistic view to drive all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
+Due to leavers in engineering leadership, moved to a view over all of backend, frontend, data and platform initiatives from a technical leadership approach to empower other engineers but also lead architectural change and strategy.
 
 Departure of other Staff Engineers made me de facto lead on Platform Engineering, DevOps and Data Engineering as well as Backend and Architectural Lead.
 
@@ -153,10 +153,9 @@ Mentoring and leading on projects to promote knowledge sharing.
 
 Drove architecture and data modelling for a unified approach to website analytics collection.
 
-Developed lightweight feature flag mechanisms to allow instant rollout of visual changes while allowing stakeholders
-and designers to see changes privately in situ any time.
+Developed lightweight feature flag mechanisms for previewing large-scale branding changes.
 
-Developed and then promoted a unified approach to CD (Jenkins) and deployments (AWS Cloudformation) across 30+ services between up to 4 teams.
+Promoted a unified approach to CD (Jenkins) and deployments across 30+ services between up to 4 teams.
 
 Led on Python tooling for automating deployments, common infrastructure patterns and testing.
 
