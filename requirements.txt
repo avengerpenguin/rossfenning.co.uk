@@ -48,7 +48,7 @@ livereload==2.6.3
     # via voltaire
 lxml==5.1.0
     # via pyld
-markdown==3.6
+markdown==3.8.1
     # via
     #   plantuml-markdown
     #   voltaire
