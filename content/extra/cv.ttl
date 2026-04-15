@@ -62,7 +62,6 @@ I have domain expertise in Search, Data, AI, delivering high traffic web fronten
                 [ cv:skillName "SPARQL"                   ; cv:skillLevel 4 ],
                 [ cv:skillName "Jupyter"                  ; cv:skillLevel 4 ],
                 [ cv:skillName "Redis"                    ; cv:skillLevel 3 ],
-                [ cv:skillName "FastAPI"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "Apache Spark"             ; cv:skillLevel 4 ],
                 [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 4 ],
                 [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
