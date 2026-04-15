@@ -246,11 +246,11 @@ Created via bash scripts an early version of what today would be called Continuo
         cv:eduGradDate "2016" ;
         cv:studiedIn _:bradford ;
         cv:eduDescription """
-MSc in Software Engineering and Internet Architecture.
+MSc (Distinction) in Software Engineering and Internet Architecture.
 
 Awarded by Bradford, run in conjunction with the BBC.
 
-Passed with distinction.
+Dissertation: Improving content discovery through combining linked data and data mining techniques
         """ ;
     ],
     [
@@ -263,7 +263,7 @@ Passed with distinction.
         cv:eduDescription """
 MA (Hons) (Cantab) in Computer Science.
 
-Passed an intermediate German via University of Cambridge Language Centre.
+Dissertation: Vector-based music search to generate playlists from qualitative descriptions
 """ ;
     ] ;
 
