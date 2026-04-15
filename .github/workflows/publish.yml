@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Install xelatex
-        run: sudo apt-get install -y texlive-xetex texlive-fonts-extra fonts-ebgaramond fonts-open-sans
+        run: sudo apt-get install -y texlive-xetex texlive-fonts-extra fonts-ebgaramond fonts-open-sans poppler-utils
       - uses: actions/checkout@v6
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -25,7 +25,10 @@ jobs:
       - name: Download fonts
         run: npm install
       - name: Build Pages Only
-        run: PYTHONPATH=. invoke build && tree && test -f content/extra/cv.pdf
+        run: |
+          PYTHONPATH=. invoke build
+          test -f content/extra/cv.pdf
+          test 2 == "$(pdfinfo content/extra/cv.pdf | awk '/^Pages:/ {print $2}')"
       - name: Build Pages and Publish
         if: github.ref == 'refs/heads/main'
         run: PYTHONPATH=. invoke publish && tree dist
