@@ -49,6 +49,9 @@ I have domain expertise in Search, AI/ML, analytics, data pipelines and platform
                 [ cv:skillName "Linux"                    ; cv:skillLevel 4 ],
                 [ cv:skillName "Solr"                     ; cv:skillLevel 4 ],
                 [ cv:skillName "Elasticsearch"            ; cv:skillLevel 5 ],
+                [ cv:skillName "Search Relevance Tuning"  ; cv:skillLevel 5 ],
+                [ cv:skillName "Search (TF-IDF, BM25, HNSW)" ; cv:skillLevel 5 ],
+                [ cv:skillName "Information Theory"       ; cv:skillLevel 4 ],
                 [ cv:skillName "Cucumber"                 ; cv:skillLevel 5 ],
                 [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
                 [ cv:skillName "SQL"                      ; cv:skillLevel 5 ],
@@ -74,7 +77,8 @@ I have domain expertise in Search, AI/ML, analytics, data pipelines and platform
                 [ cv:skillName "Haskell"                  ; cv:skillLevel 3 ],
                 [ cv:skillName "Langchain"                ; cv:skillLevel 4 ],
                 [ cv:skillName "Ollama"                   ; cv:skillLevel 4 ],
-                [ cv:skillName "LLMs"                     ; cv:skillLevel 4 ]
+                [ cv:skillName "LLMs"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Agentic AI"               ; cv:skillLevel 4 ]
             ;
 
 
