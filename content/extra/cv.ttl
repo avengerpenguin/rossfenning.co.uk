@@ -12,16 +12,14 @@
     cv:cvTitle "Curriculum Vitae" ;
     cv:cvDescription """
 I am a software engineer with 20+ years experience currently working at the level of
-Principal/technical leader/consultant with a holistic approach to Systems, DevOps and software delivery.
-This includes software development itself, architecture,
-continuous delivery, reducing duplicated effort and the human side of
-how teams ship changes safely at pace.
+Principal/Distinguished with a holistic approach to Systems, DevOps and software delivery,
+including the human side of delivering value at pace.
 
 My primary experience is in Java or Python backends in web development stacks,
 but I also thrive in polyglot contexts and can be a generalist when needed.
 I have expertise in Continuous Delivery, DevOps, Platform Engineering, Infrastructe-as-code as well as Data Engineering.
 
-I have domain expertise in Search, Data, AI, delivering high traffic web frontends, analytics, data pipelines and platform migrations.
+I have domain expertise in Search, AI/ML, analytics, data pipelines and platform engineering.
 """;
 
     # Skills
