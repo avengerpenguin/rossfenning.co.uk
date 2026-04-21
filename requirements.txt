@@ -20,7 +20,7 @@ cssmin==0.2.0
     # via voltaire
 doctrine==0.6.0
     # via voltaire
-docutils==0.20.1
+docutils==0.22.4
     # via pelican
 feedgenerator==2.1.0
     # via pelican
@@ -60,7 +60,7 @@ mdurl==0.1.2
     # via markdown-it-py
 ordered-set==4.1.0
     # via pelican
-pelican==4.11.0.post0
+pelican==4.12.0
     # via
     #   -r requirements.in
     #   pelican-sitemap
