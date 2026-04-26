@@ -1,0 +1,324 @@
+@prefix cv: <http://rdfs.org/resume-rdf/cv.rdfs#> .
+@prefix cvbase: <http://rdfs.org/resume-rdf/base.rdfs#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+
+<http://rossfenning.co.uk/cv/#cv> a cv:CV ;
+    cv:aboutPerson <http://rossfenning.co.uk/#me> ;
+    cv:cvTitle "Curriculum Vitae" ;
+    cv:cvDescription """
+I am a software engineer with 21+ years experience working at Principal level,
+with deep experience in technical leadership, distributed systems, DevOps and software delivery,
+including the human side of delivering value at pace.
+
+My primary experience is in Python or Java backends as well as platform tooling and data pipelines.
+I also thrive in polyglot contexts and can be a generalist when needed.
+
+I have domain expertise in Search, AI/ML, analytics, Continuous Delivery, DevOps, data pipelines and platform engineering.
+""";
+
+    # Skills
+    cv:hasSkill [ cv:skillName "Solr"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Elasticsearch"            ; cv:skillLevel 5 ],
+                [ cv:skillName "Search Relevance Tuning"  ; cv:skillLevel 5 ],
+                [ cv:skillName "Search (TF-IDF, BM25, HNSW)" ; cv:skillLevel 5 ],
+                [ cv:skillName "Lucene"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Information Theory"       ; cv:skillLevel 4 ],
+                [ cv:skillName "RDF"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "Linked Data"              ; cv:skillLevel 5 ],
+                [ cv:skillName "TDD"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "BDD"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "Agile"                    ; cv:skillLevel 5 ],
+                [ cv:skillName "DevOps"                   ; cv:skillLevel 5 ],
+                [ cv:skillName "Continuous Delivery"      ; cv:skillLevel 5 ],
+                [ cv:skillName "Kanban"                   ; cv:skillLevel 5 ],
+                [ cv:skillName "Python"                   ; cv:skillLevel 5 ; rdfs:seeAlso <http://dbpedia.org/resource/Python_(programming_language)> ],
+                [ cv:skillName "UML"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "AWS"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "AWS Lambda"               ; cv:skillLevel 5 ],
+                [ cv:skillName "AWS Glue"                 ; cv:skillLevel 4 ],
+                [ cv:skillName "Terraform/OpenTofu"       ; cv:skillLevel 4 ],
+                [ cv:skillName "Terragrunt"               ; cv:skillLevel 4 ],
+                [ cv:skillName "Kafka"                    ; cv:skillLevel 3 ],
+                [ cv:skillName "Node.js"                  ; cv:skillLevel 4 ],
+                [ cv:skillName "Java"                     ; cv:skillLevel 5 ; rdfs:seeAlso <http://www.dbpedialite.org/things/15881#id> ],
+                [ cv:skillName "Spring Boot"              ; cv:skillLevel 5 ],
+                [ cv:skillName "Quarkus"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Docker"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Kubernetes"               ; cv:skillLevel 4 ],
+                [ cv:skillName "LaTeX"                    ; cv:skillLevel 4 ],
+                [ cv:skillName "Linux"                    ; cv:skillLevel 4 ],
+                [ cv:skillName "Cucumber"                 ; cv:skillLevel 5 ],
+                [ cv:skillName "PostgreSQL"               ; cv:skillLevel 4 ],
+                [ cv:skillName "SQL"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "Django"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Federated Authentication" ; cv:skillLevel 4 ],
+                [ cv:skillName "Flask/Quart"              ; cv:skillLevel 5 ],
+                [ cv:skillName "FastAPI"                  ; cv:skillLevel 5 ],
+                [ cv:skillName "Git"                      ; cv:skillLevel 5 ],
+                [ cv:skillName "Soft Systems Methodology" ; cv:skillLevel 3 ],
+                [ cv:skillName "SPARQL"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "Jupyter"                  ; cv:skillLevel 4 ],
+                [ cv:skillName "Redis"                    ; cv:skillLevel 3 ],
+                [ cv:skillName "Apache Spark"             ; cv:skillLevel 4 ],
+                [ cv:skillName "RabbitMQ"                 ; cv:skillLevel 4 ],
+                [ cv:skillName "ActiveMQ"                 ; cv:skillLevel 3 ],
+                [ cv:skillName "TypeScript"               ; cv:skillLevel 3 ],
+                [ cv:skillName "Prolog"                   ; cv:skillLevel 3 ; rdfs:seeAlso <http://www.dbpedialite.org/things/23485#id> ],
+                [ cv:skillName "GCP"                      ; cv:skillLevel 4 ],
+                [ cv:skillName "BigQuery"                 ; cv:skillLevel 4 ],
+                [ cv:skillName "Scaleway"                 ; cv:skillLevel 3 ],
+                [ cv:skillName "Clojure"                  ; cv:skillLevel 2 ],
+                [ cv:skillName "Grafana"                  ; cv:skillLevel 2 ],
+                [ cv:skillName "MongoDB"                  ; cv:skillLevel 4 ],
+                [ cv:skillName "Haskell"                  ; cv:skillLevel 3 ],
+                [ cv:skillName "Langchain"                ; cv:skillLevel 4 ],
+                [ cv:skillName "Ollama"                   ; cv:skillLevel 4 ],
+                [ cv:skillName "LLMs"                     ; cv:skillLevel 4 ],
+                [ cv:skillName "Agentic AI"               ; cv:skillLevel 4 ]
+            ;
+
+
+    # Employment History
+    cv:hasWorkHistory _:job-roku,
+                      _:job-bridgeu,
+                      _:job-inrix,
+                      _:job-bbc-principal,
+                      _:job-bbc-senior,
+                      _:job-bbc-contract,
+                      _:job-cranfield,
+                      _:job-timlilley,
+                      _:job-transversal,
+                      _:job-level5 ;
+  cv:hasEducation _:msc, _:ma ;
+  cv:hasOtherInfo [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Traditional music including playing Bodhrán and Tin Whistle" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Karate" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Wine (WSET 2 qualified), Real Ale (CAMRA member)" ],
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Interests ; cv:otherInfoDescription "Computer Science, Category Theory, Pure Mathematics, Philosophy" ],
+
+                  [ a cv:OtherInfo ; cv:otherInfoType cvbase:Publications ; cv:otherInfoDescription "Fenning, R., Dogan, H., Phalp, K. (2014). Applicability of SSM and UML for Designing a Search Application for the British Broadcasting Corporation (BBC)." ]
+  .
+
+_:job-roku a cv:WorkHistory ;
+           cv:employedIn _:roku ;
+           cv:startDate "2026" ;
+           cv:isCurrent cvbase:True ;
+           cv:jobTitle "Senior Software Engineer" ;
+           cv:jobDescription """
+Joined team building back office finance systems in Java and Python (Airflow)
+
+Led on strategy for sharing finance data for analytics purposes
+
+Championed unifying team's approach to Terraform and infrastructure
+          """ .
+_:job-bridgeu
+          a cv:WorkHistory ;
+          cv:employedIn _:bridgeu ;
+          cv:startDate "2024" ;
+          cv:endDate "2025" ;
+          cv:isCurrent cvbase:False ;
+          cv:jobTitle "Staff Software Engineer" ;
+          cv:jobDescription """
+Hired initially to lead Backend Chapter and drive through a "Tech Transformation" strategy to break a Ruby monolith into Python FastAPI services for a new Svelte app.
+
+Worked with management to prove improvements in velocity and continuous delivery due to transformed architectures.
+
+Tech: Python (FastAPI), TypeScript (Svelte), PostgreSQL, DocumentDB, data pipelines, Ruby (Rails).
+
+Introduced low-level embedded search (Lucene and Whoosh) in APIs suitable for small data use cases,
+e.g. university search that factors in user preferences, academic strength and marketing requirements.
+
+Departure of other Staff Engineers made me de facto lead on Platform Engineering, DevOps and Data Engineering as well as Backend and Architectural Lead.
+
+Led a transition from a Spotify-style "chapter" model for disciplines to a "guild" model to encourage collective decision-making and empower engineers to shape architecture and technical choices.
+          """ .
+
+_:job-inrix
+        a cv:WorkHistory ;
+        cv:employedIn _:inrix ;
+        cv:startDate "2022" ;
+        cv:endDate "2024" ;
+        cv:isCurrent cvbase:False ;
+        cv:jobTitle "Lead Software Engineer" ;
+                    cv:jobDescription """
+Lead role across 2 teams distributed between Manchester, UK and Kirkland, USA (8 reports).
+
+Built standard deployment platform on Kubernetes (AWS EKS), Quarkus, Terraform, GitHub Actions.
+
+Mentored on Continuous Delivery, infrastructure as code and DevOps.
+
+Built event-driven traffic alerting using Kafka, Elasticsearch (around 1 billion data points), RabbitMQ and Reactive Java (Quarkus).
+
+Contributed to a company-wide AI project feeding data into LLMs.
+
+Innovated Python project for applying BDD to an AI/LLM-based project using local LLMs for testing purposes.
+""" .
+
+_:job-bbc-principal
+        a cv:WorkHistory ;
+        cv:employedIn _:bbcnorth ;
+        cv:startDate "2015" ;
+        cv:endDate "2022" ;
+        cv:isCurrent cvbase:False ;
+        cv:jobTitle "Principal Software Engineer" ;
+                    cv:jobDescription """
+Technical leader on highly-available Node.js and Spring Boot APIs used by whole BBC website (~50 internal clients, 15k requests per second for public-facing APIs).
+
+Continued to work on Search technologies with broadening into analytics and micro-frontends.
+
+Mentoring and leading on projects to promote knowledge sharing across up to 4 teams of engineers.
+
+Drove architecture and data modelling for a unified approach to website analytics collection.
+
+Developed lightweight feature flag mechanisms for previewing large-scale branding changes.
+
+Promoted a unified CD (Jenkins) and deployment approach across 30+ services and 4 teams, supported with internal metrics collected in Elasticsearch.
+
+Led on Python tooling for automating deployments, common infrastructure patterns and testing.
+""" .
+
+_:job-bbc-senior
+        a cv:WorkHistory ;
+        cv:employedIn _:bbcnorth ;
+        cv:startDate "2012" ;
+        cv:endDate "2015" ;
+        cv:isCurrent cvbase:False ;
+        cv:jobTitle "Senior Software Engineer" ;
+                cv:jobDescription """
+Primarily working on Search product with Solr, some bespoke APIs and some low-level Lucene.
+
+Developed event-driven data pipelines with Java (Jersey), Apache Camel and ActiveMQ.
+
+Built tooling in Ruby and Cucumber to drive projects via BDD and TDD.
+""" .
+
+_:job-bbc-contract
+        a cv:WorkHistory ;
+        cv:employedIn _:bbcwales ;
+        cv:startDate "2010" ;
+        cv:endDate "2012" ;
+        cv:jobTitle "Contract Software Engineer" ;
+                cv:jobDescription """
+Building data aggregation services in Java (Spring MVC)
+
+Contributed to some front end in PHP and JS on the BBC Home page.
+
+Creating geospatial BBC Weather search using Solr and PostGIS
+""" .
+
+_:job-cranfield
+        a cv:WorkHistory ;
+        cv:employedIn _:cranfield ;
+        cv:startDate "2007" ;
+        cv:endDate "2010" ;
+        cv:jobTitle "Systems Developer" ;
+        cv:jobDescription """
+Building in-house Java solutions to connect various systems in the IT department.
+""" .
+
+_:job-timlilley
+        a cv:WorkHistory ;
+        cv:employedIn _:timlilley ;
+        cv:startDate "2005" ;
+        cv:endDate "2006" ;
+        cv:jobTitle "Fundraiser" ;
+        cv:jobDescription """House to house fundraiser on behalf of Amnesty International.""" .
+
+_:job-transversal
+        a cv:WorkHistory ;
+        cv:employedIn _:transversal ;
+        cv:startDate "2005" ;
+        cv:endDate "2006" ;
+        cv:jobTitle "Tester" ;
+        cv:jobDescription """
+Manual and (Python) automation tester for a web-based software product.
+""" .
+
+_:job-level5
+        a                 cv:WorkHistory ;
+        cv:employedIn     _:level5       ;
+        cv:startDate      "2004"      ;
+        cv:endDate        "2004"      ;
+        cv:jobTitle       "Tester"       ;
+        cv:jobDescription """
+Performance testing for a new Ethernet card and drivers on both Linux and Windows.
+
+Created via bash scripts an early version of what today would be called Continuous Integration.
+        """ .
+
+_:msc
+        a cv:Education ;
+        cv:degreeType cvbase:EduMaster ;
+        cv:eduMajor "MSc Software Engineering" ;
+        cv:eduStartDate "2012" ;
+        cv:eduGradDate "2016" ;
+        cv:studiedIn _:bradford ;
+        cv:eduDescription """
+MSc (Distinction) in Software Engineering and Internet Architecture.
+
+Awarded by Bradford, run in conjunction with the BBC.
+
+Dissertation: Improving content discovery through combining linked data and data mining techniques
+        """ .
+_:ma
+        a cv:Education ;
+        cv:degreeType cvbase:EduBachelor ;
+        cv:eduMajor "MA Computer Science" ;
+        cv:eduStartDate "2002" ;
+        cv:eduGradDate "2005" ;
+        cv:studiedIn _:cambridge ;
+        cv:eduDescription """
+MA (Hons) (Cantab) in Computer Science.
+
+Dissertation: Vector-based music search to generate playlists from qualitative descriptions
+""" .
+
+# Little bit about me with some linking to other datasets about publications, projects, etc.
+<http://rossfenning.co.uk/#me> a cv:Person ;
+    cv:hasNationality "British" ;
+    cv:hasCitizenship <http://www.daml.org/2001/09/countries/countries.daml#GB> ;
+    owl:sameAs <http://id.crossref.org/contributor/ross-fenning-16fs0eva8w8vu> ;
+    foaf:homepage <https://rossfenning.co.uk/> ;
+    dcterms:creator <http://dx.doi.org/10.1007/978-3-662-43745-2_33> .
+
+# Just to be clear that these are interchangeable since one is used above
+<http://dx.doi.org/10.1007/978-3-662-43745-2_33> owl:sameAs <doi:10.1007/978-3-662-43745-2_33> .
+
+
+_:roku          a          cv:Company  ;
+                cv:Name    "Roku"    .
+_:bridgeu       a          cv:Company  ;
+            cv:Name    "BridgeU" .
+_:inrix       a          cv:Company  ;
+            cv:Name    "INRIX" .
+_:bbcnorth    a          cv:Company  ;
+            cv:Name    "BBC North" .
+_:bbcwales    a          cv:Company  ;
+            cv:Name    "BBC Cymru Wales" .
+_:funpro      a          cv:Company  ;
+              cv:Name    "Functional Programming Ltd." .
+_:cranfield   a          cv:Company  ;
+            cv:Name    "Cranfield University" .
+_:timlilley   a cv:Company ;
+            cv:Name    "Tim Lilley Fundraising" .
+_:transversal a cv:Company ;
+            cv:Name    "Transversal Corporation" .
+_:level5      a cv:Company ;
+            cv:Name    "Level 5 Networks" .
+
+_:bradford    a          cv:EducationalOrg ;
+            cv:Name    "University of Bradford" .
+_:cambridge   a          cv:EducationalOrg ;
+            cv:Name    "University of Cambridge" .
+
+
+# Ideally this would live in some schema somewhere, but for now we
+# need to declare some thing as having unique values to save faffing
+# with iterables in any templates.
+cv:startDate a owl:FunctionalProperty .
+cv:eduGradDate a owl:FunctionalProperty .
+cv:lastUpdate a owl:FunctionalProperty .
