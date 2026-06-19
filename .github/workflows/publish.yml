@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Install xelatex
         run: sudo apt-get install -y texlive-xetex texlive-fonts-extra fonts-ebgaramond fonts-open-sans poppler-utils
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
