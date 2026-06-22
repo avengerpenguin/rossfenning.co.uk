@@ -76,7 +76,7 @@ pygments==2.17.2
     # via
     #   pelican
     #   rich
-pyld==3.0.0
+pyld==3.1.0
     # via -r requirements.in
 pyparsing==3.2.1
     # via rdflib
