@@ -131,7 +131,7 @@ Worked with management to prove improvements in velocity and continuous delivery
 
 Tech: Python (FastAPI), TypeScript (Svelte), PostgreSQL, DocumentDB, data pipelines, Ruby (Rails).
 
-Introduced low-level embedded search (Lucene and Whoosh) in APIs suitable for small data use cases,
+Introduced embedded search (Lucene and Whoosh) in APIs suitable for small data use cases,
 e.g. university search that factors in user preferences, academic strength and marketing requirements.
 
 Departure of other Staff Engineers made me de facto lead on Platform Engineering, DevOps and Data Engineering as well as Backend and Architectural Lead.
