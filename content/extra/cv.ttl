@@ -113,6 +113,8 @@ Joined team building back office finance systems in Java and Python (Airflow)
 
 Led on strategy for sharing finance data for analytics purposes
 
+Contributed to improving DevOps and Continuous Delivery capabilities for Agentic AI development
+
 Championed unifying team's approach to Terraform and infrastructure
           """ .
 _:job-bridgeu
