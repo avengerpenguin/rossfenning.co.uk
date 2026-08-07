@@ -21,13 +21,13 @@ repos:
     -   id: autoflake
         args: [--remove-all-unused-imports, --in-place]
   - repo: https://github.com/PyCQA/isort
-    rev: 9.0.0a3
+    rev: 9.0.0b1
     hooks:
       - id: isort
         args: ['--line-length=79']
         language_version: python3.13
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v2.1.0
+    rev: v2.3.0
     hooks:
       - id: mypy
         additional_dependencies: [types-requests, types-PyYAML, types-Flask, types-Werkzeug, types-Markdown]
