@@ -107,7 +107,7 @@ smartypants==2.0.1
     # via typogrify
 soupsieve==2.9
     # via beautifulsoup4
-tornado==6.5.8
+tornado==6.5.9
     # via livereload
 typing-extensions==4.16.0
     # via anyio
