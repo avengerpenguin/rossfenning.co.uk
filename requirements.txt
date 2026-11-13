@@ -105,7 +105,7 @@ six==1.16.0
     #   python-dateutil
 smartypants==2.0.1
     # via typogrify
-soupsieve==2.9
+soupsieve==4.0
     # via beautifulsoup4
 tornado==6.6.1
     # via livereload
